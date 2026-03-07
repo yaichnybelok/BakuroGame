@@ -1,0 +1,721 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/text_3_4__3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="14dp"
+        android:text="00"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toStartOf="@+id/divider24"
+        app:layout_constraintTop_toBottomOf="@+id/divider19" />
+
+    <TextView
+        android:id="@+id/text_3_4__"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0000"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="@+id/text_3_4__3"
+        app:layout_constraintTop_toBottomOf="@+id/text_3_4__3" />
+
+    <TextView
+        android:id="@+id/text_3_4__2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0000"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="@+id/text_3_4__10"
+        app:layout_constraintTop_toBottomOf="@+id/text_3_4__10" />
+
+    <TextView
+        android:id="@+id/text_3_4__10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="14dp"
+        android:text="00"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toStartOf="@+id/divider24"
+        app:layout_constraintTop_toBottomOf="@+id/divider4" />
+
+    <View
+        android:id="@+id/divider60"
+        android:layout_width="80dp"
+        android:layout_height="1dp"
+        android:layout_marginStart="101dp"
+        android:layout_marginTop="84dp"
+        android:background="#000000"
+        android:rotation="45"
+        app:layout_constraintStart_toEndOf="@+id/divider2"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/text_5_1__10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="39dp"
+        android:text="00"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toStartOf="@+id/divider25"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/text_5_1__2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0000"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="@+id/text_5_1__10"
+        app:layout_constraintTop_toBottomOf="@+id/text_5_1__10" />
+
+    <TextView
+        android:id="@+id/text_4_1__2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0000"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="@+id/text_4_1__10"
+        app:layout_constraintTop_toBottomOf="@+id/text_4_1__10" />
+
+    <TextView
+        android:id="@+id/text_3_2__10_down"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="39dp"
+        android:text="00"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toStartOf="@+id/divider23"
+        app:layout_constraintTop_toTopOf="@+id/divider8" />
+
+    <TextView
+        android:id="@+id/text_3_2__10_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="14dp"
+        android:text="00"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toStartOf="@+id/divider23"
+        app:layout_constraintTop_toTopOf="@+id/divider8" />
+
+    <TextView
+        android:id="@+id/text_3_2__2_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0000"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="@+id/text_3_2__10_right"
+        app:layout_constraintTop_toBottomOf="@+id/text_3_2__10_right" />
+
+    <TextView
+        android:id="@+id/text_4_1__10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="39dp"
+        android:text="00"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toStartOf="@+id/divider24"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/text_2_2__2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0000"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="@+id/text_2_2__10"
+        app:layout_constraintTop_toBottomOf="@+id/text_2_2__10" />
+
+    <TextView
+        android:id="@+id/text_3_2__2_down"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0000"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="@+id/text_3_2__10_down"
+        app:layout_constraintTop_toBottomOf="@+id/text_3_2__10_down" />
+
+    <TextView
+        android:id="@+id/text_2_2__10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="39dp"
+        android:text="00"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toStartOf="@+id/divider22"
+        app:layout_constraintTop_toTopOf="@+id/divider8" />
+
+    <TextView
+        android:id="@+id/text_1_4__3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0000"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="@+id/text_1_4__10"
+        app:layout_constraintTop_toBottomOf="@+id/text_1_4__10" />
+
+    <TextView
+        android:id="@+id/text_1_5__10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="113dp"
+        android:layout_marginEnd="14dp"
+        android:text="00"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toStartOf="@+id/divider11"
+        app:layout_constraintTop_toBottomOf="@+id/divider3" />
+
+    <View
+        android:id="@+id/divider58"
+        android:layout_width="80dp"
+        android:layout_height="1dp"
+        android:layout_marginStart="-15dp"
+        android:layout_marginTop="198dp"
+        android:background="#000000"
+        android:rotation="45"
+        app:layout_constraintStart_toEndOf="@+id/divider2"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/text_1_4__10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="56dp"
+        android:layout_marginEnd="14dp"
+        android:text="00"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toStartOf="@+id/divider11"
+        app:layout_constraintTop_toBottomOf="@+id/divider3" />
+
+    <TextView
+        android:id="@+id/text_1_5__2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0000"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="@+id/text_1_5__10"
+        app:layout_constraintTop_toBottomOf="@+id/text_1_5__10" />
+
+    <View
+        android:id="@+id/divider57"
+        android:layout_width="80dp"
+        android:layout_height="1dp"
+        android:layout_marginStart="101dp"
+        android:layout_marginTop="84dp"
+        android:background="#000000"
+        android:rotation="45"
+        app:layout_constraintStart_toEndOf="@+id/divider2"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/divider56"
+        android:layout_width="80dp"
+        android:layout_height="1dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="84dp"
+        android:background="#000000"
+        android:rotation="45"
+        app:layout_constraintStart_toEndOf="@+id/divider2"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/divider55"
+        android:layout_width="80dp"
+        android:layout_height="1dp"
+        android:layout_marginStart="330dp"
+        android:layout_marginTop="255dp"
+        android:background="#000000"
+        android:rotation="45"
+        app:layout_constraintStart_toEndOf="@+id/divider2"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/divider54"
+        android:layout_width="80dp"
+        android:layout_height="1dp"
+        android:layout_marginStart="330dp"
+        android:layout_marginTop="84dp"
+        android:background="#000000"
+        android:rotation="45"
+        app:layout_constraintStart_toEndOf="@+id/divider2"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/divider53"
+        android:layout_width="80dp"
+        android:layout_height="1dp"
+        android:layout_marginStart="330dp"
+        android:layout_marginTop="142dp"
+        android:background="#000000"
+        android:rotation="45"
+        app:layout_constraintStart_toEndOf="@+id/divider2"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/divider52"
+        android:layout_width="80dp"
+        android:layout_height="1dp"
+        android:layout_marginStart="330dp"
+        android:layout_marginTop="198dp"
+        android:background="#000000"
+        android:rotation="45"
+        app:layout_constraintStart_toEndOf="@+id/divider2"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/divider51"
+        android:layout_width="80dp"
+        android:layout_height="1dp"
+        android:layout_marginStart="272dp"
+        android:layout_marginTop="142dp"
+        android:background="#000000"
+        android:rotation="45"
+        app:layout_constraintStart_toEndOf="@+id/divider2"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/divider50"
+        android:layout_width="80dp"
+        android:layout_height="1dp"
+        android:layout_marginStart="272dp"
+        android:layout_marginTop="84dp"
+        android:background="#000000"
+        android:rotation="45"
+        app:layout_constraintStart_toEndOf="@+id/divider2"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/divider49"
+        android:layout_width="80dp"
+        android:layout_height="1dp"
+        android:layout_marginStart="158dp"
+        android:layout_marginTop="199dp"
+        android:background="#000000"
+        android:rotation="45"
+        app:layout_constraintStart_toEndOf="@+id/divider2"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/divider47"
+        android:layout_width="80dp"
+        android:layout_height="1dp"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="373dp"
+        android:background="#000000"
+        android:rotation="45"
+        app:layout_constraintStart_toEndOf="@+id/divider2"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/divider45"
+        android:layout_width="80dp"
+        android:layout_height="1dp"
+        android:layout_marginStart="159dp"
+        android:layout_marginTop="373dp"
+        android:background="#000000"
+        android:rotation="45"
+        app:layout_constraintStart_toEndOf="@+id/divider2"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/divider26"
+        android:layout_width="1dp"
+        android:layout_height="400dp"
+        android:layout_marginStart="343dp"
+        android:background="#020202"
+        app:layout_constraintBottom_toTopOf="@+id/divider6"
+        app:layout_constraintStart_toStartOf="@+id/divider2" />
+
+    <View
+        android:id="@+id/divider25"
+        android:layout_width="1dp"
+        android:layout_height="400dp"
+        android:layout_marginStart="285dp"
+        android:background="#020202"
+        app:layout_constraintBottom_toTopOf="@+id/divider6"
+        app:layout_constraintStart_toStartOf="@+id/divider2" />
+
+    <View
+        android:id="@+id/divider21"
+        android:layout_width="400dp"
+        android:layout_height="1dp"
+        android:layout_marginTop="343dp"
+        android:background="#000000"
+        app:layout_constraintStart_toEndOf="@+id/divider2"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/divider20"
+        android:layout_width="400dp"
+        android:layout_height="1dp"
+        android:layout_marginTop="285dp"
+        android:background="#000000"
+        app:layout_constraintStart_toEndOf="@+id/divider2"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/divider19"
+        android:layout_width="400dp"
+        android:layout_height="1dp"
+        android:layout_marginTop="228dp"
+        android:background="#000000"
+        app:layout_constraintStart_toEndOf="@+id/divider2"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/divider4"
+        android:layout_width="400dp"
+        android:layout_height="1dp"
+        android:layout_marginTop="171dp"
+        android:background="#000000"
+        app:layout_constraintStart_toEndOf="@+id/divider2"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/divider3"
+        android:layout_width="400dp"
+        android:layout_height="1dp"
+        android:layout_marginTop="114dp"
+        android:background="#000000"
+        app:layout_constraintStart_toEndOf="@+id/divider2"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="400dp"
+        android:layout_height="1dp"
+        android:background="#000000"
+        app:layout_constraintStart_toEndOf="@+id/divider2"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/divider6"
+        android:layout_width="400dp"
+        android:layout_height="1dp"
+        android:layout_marginTop="400dp"
+        android:background="#000000"
+        app:layout_constraintStart_toEndOf="@+id/divider2"
+        app:layout_constraintTop_toBottomOf="@+id/divider" />
+
+    <View
+        android:id="@+id/divider8"
+        android:layout_width="400dp"
+        android:layout_height="1dp"
+        android:layout_marginTop="57dp"
+        android:background="#000000"
+        app:layout_constraintStart_toEndOf="@+id/divider2"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/divider2"
+        android:layout_width="1dp"
+        android:layout_height="400dp"
+        android:background="#000000"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/divider" />
+
+    <View
+        android:id="@+id/divider5"
+        android:layout_width="1dp"
+        android:layout_height="400dp"
+        android:layout_marginStart="400dp"
+        android:background="#020202"
+        app:layout_constraintBottom_toTopOf="@+id/divider6"
+        app:layout_constraintStart_toStartOf="@+id/divider2" />
+
+    <View
+        android:id="@+id/divider11"
+        android:layout_width="1dp"
+        android:layout_height="400dp"
+        android:layout_marginStart="57dp"
+        android:background="#020202"
+        app:layout_constraintBottom_toTopOf="@+id/divider6"
+        app:layout_constraintStart_toStartOf="@+id/divider2" />
+
+    <View
+        android:id="@+id/divider22"
+        android:layout_width="1dp"
+        android:layout_height="400dp"
+        android:layout_marginStart="114dp"
+        android:background="#020202"
+        app:layout_constraintBottom_toTopOf="@+id/divider6"
+        app:layout_constraintStart_toStartOf="@+id/divider2" />
+
+    <View
+        android:id="@+id/divider23"
+        android:layout_width="1dp"
+        android:layout_height="400dp"
+        android:layout_marginStart="171dp"
+        android:background="#020202"
+        app:layout_constraintBottom_toTopOf="@+id/divider6"
+        app:layout_constraintStart_toStartOf="@+id/divider2" />
+
+    <View
+        android:id="@+id/divider24"
+        android:layout_width="1dp"
+        android:layout_height="400dp"
+        android:layout_marginStart="228dp"
+        android:background="#020202"
+        app:layout_constraintBottom_toTopOf="@+id/divider6"
+        app:layout_constraintStart_toStartOf="@+id/divider2" />
+
+    <View
+        android:id="@+id/divider7"
+        android:layout_width="80dp"
+        android:layout_height="1dp"
+        android:layout_marginStart="-15dp"
+        android:layout_marginTop="28dp"
+        android:background="#000000"
+        android:rotation="45"
+        app:layout_constraintStart_toEndOf="@+id/divider2"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/divider33"
+        android:layout_width="80dp"
+        android:layout_height="1dp"
+        android:layout_marginStart="-15dp"
+        android:layout_marginTop="84dp"
+        android:background="#000000"
+        android:rotation="45"
+        app:layout_constraintStart_toEndOf="@+id/divider2"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/divider34"
+        android:layout_width="80dp"
+        android:layout_height="1dp"
+        android:layout_marginStart="-15dp"
+        android:layout_marginTop="142dp"
+        android:background="#000000"
+        android:rotation="45"
+        app:layout_constraintStart_toEndOf="@+id/divider2"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/divider35"
+        android:layout_width="80dp"
+        android:layout_height="1dp"
+        android:layout_marginStart="-15dp"
+        android:layout_marginTop="198dp"
+        android:background="#000000"
+        android:rotation="45"
+        app:layout_constraintStart_toEndOf="@+id/divider2"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/divider36"
+        android:layout_width="80dp"
+        android:layout_height="1dp"
+        android:layout_marginStart="-15dp"
+        android:layout_marginTop="255dp"
+        android:background="#000000"
+        android:rotation="45"
+        app:layout_constraintStart_toEndOf="@+id/divider2"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/divider37"
+        android:layout_width="80dp"
+        android:layout_height="1dp"
+        android:layout_marginStart="-15dp"
+        android:layout_marginTop="313dp"
+        android:background="#000000"
+        android:rotation="45"
+        app:layout_constraintStart_toEndOf="@+id/divider2"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/divider39"
+        android:layout_width="80dp"
+        android:layout_height="1dp"
+        android:layout_marginStart="43dp"
+        android:layout_marginTop="313dp"
+        android:background="#000000"
+        android:rotation="45"
+        app:layout_constraintStart_toEndOf="@+id/divider2"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/divider40"
+        android:layout_width="80dp"
+        android:layout_height="1dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="313dp"
+        android:background="#000000"
+        android:rotation="45"
+        app:layout_constraintStart_toEndOf="@+id/divider2"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/divider46"
+        android:layout_width="80dp"
+        android:layout_height="1dp"
+        android:layout_marginStart="102dp"
+        android:layout_marginTop="373dp"
+        android:background="#000000"
+        android:rotation="45"
+        app:layout_constraintStart_toEndOf="@+id/divider2"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/divider41"
+        android:layout_width="80dp"
+        android:layout_height="1dp"
+        android:layout_marginStart="157dp"
+        android:layout_marginTop="313dp"
+        android:background="#000000"
+        android:rotation="45"
+        app:layout_constraintStart_toEndOf="@+id/divider2"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/divider48"
+        android:layout_width="80dp"
+        android:layout_height="1dp"
+        android:layout_marginStart="158dp"
+        android:layout_marginTop="256dp"
+        android:background="#000000"
+        android:rotation="45"
+        app:layout_constraintStart_toEndOf="@+id/divider2"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/divider42"
+        android:layout_width="80dp"
+        android:layout_height="1dp"
+        android:layout_marginStart="214dp"
+        android:layout_marginTop="313dp"
+        android:background="#000000"
+        android:rotation="45"
+        app:layout_constraintStart_toEndOf="@+id/divider2"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/divider43"
+        android:layout_width="80dp"
+        android:layout_height="1dp"
+        android:layout_marginStart="216dp"
+        android:layout_marginTop="373dp"
+        android:background="#000000"
+        android:rotation="45"
+        app:layout_constraintStart_toEndOf="@+id/divider2"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/divider38"
+        android:layout_width="80dp"
+        android:layout_height="1dp"
+        android:layout_marginStart="-13dp"
+        android:layout_marginTop="372dp"
+        android:background="#000000"
+        android:rotation="45"
+        app:layout_constraintStart_toEndOf="@+id/divider2"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/divider27"
+        android:layout_width="80dp"
+        android:layout_height="1dp"
+        android:layout_marginStart="43dp"
+        android:layout_marginTop="28dp"
+        android:background="#000000"
+        android:rotation="45"
+        app:layout_constraintStart_toEndOf="@+id/divider2"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/divider28"
+        android:layout_width="80dp"
+        android:layout_height="1dp"
+        android:layout_marginStart="101dp"
+        android:layout_marginTop="28dp"
+        android:background="#000000"
+        android:rotation="45"
+        app:layout_constraintStart_toEndOf="@+id/divider2"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/divider29"
+        android:layout_width="80dp"
+        android:layout_height="1dp"
+        android:layout_marginStart="158dp"
+        android:layout_marginTop="28dp"
+        android:background="#000000"
+        android:rotation="45"
+        app:layout_constraintStart_toEndOf="@+id/divider2"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/divider30"
+        android:layout_width="80dp"
+        android:layout_height="1dp"
+        android:layout_marginStart="215dp"
+        android:layout_marginTop="28dp"
+        android:background="#000000"
+        android:rotation="45"
+        app:layout_constraintStart_toEndOf="@+id/divider2"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/divider31"
+        android:layout_width="80dp"
+        android:layout_height="1dp"
+        android:layout_marginStart="272dp"
+        android:layout_marginTop="28dp"
+        android:background="#000000"
+        android:rotation="45"
+        app:layout_constraintStart_toEndOf="@+id/divider2"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/divider32"
+        android:layout_width="80dp"
+        android:layout_height="1dp"
+        android:layout_marginStart="330dp"
+        android:layout_marginTop="28dp"
+        android:background="#000000"
+        android:rotation="45"
+        app:layout_constraintStart_toEndOf="@+id/divider2"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/text_1_3__2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0000"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="@+id/text_1_3__10"
+        app:layout_constraintTop_toBottomOf="@+id/text_1_3__10" />
+
+    <TextView
+        android:id="@+id/text_1_3__10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="14dp"
+        android:text="00"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toStartOf="@+id/divider11"
+        app:layout_constraintTop_toBottomOf="@+id/divider3" />
+
+    <EditText
+        android:id="@+id/text_2_2_edit"
+        android:layout_width="60dp"
+        android:layout_height="53dp"
+        android:ems="10"
+        android:imeOptions="actionNext"
+        android:inputType="number"
+        android:maxLength="1"
+        android:textSize="24sp"
+        tools:layout_editor_absoluteX="181dp"
+        tools:layout_editor_absoluteY="489dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

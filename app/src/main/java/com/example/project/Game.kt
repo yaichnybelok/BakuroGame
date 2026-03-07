@@ -35,8 +35,6 @@ class Game : AppCompatActivity() {
             val newItem: View = inflater.inflate(R.layout.activity_2x2, gameLayout, false)
             gameLayout.addView(newItem)
 
-            val avaiable = mutableListOf(1, 2, 4, 8)
-
             val text_1_2__10 = findViewById<TextView>(R.id.text_1_2__10)
             val text_1_3__10 = findViewById<TextView>(R.id.text_1_3__10)
             val text_2_1__10 = findViewById<TextView>(R.id.text_2_1__10)
@@ -86,6 +84,13 @@ class Game : AppCompatActivity() {
                 }
 
             }
+
+        }
+        else if (difficulty == 2) {
+
+            val inflater = LayoutInflater.from(this)
+            val newItem: View = inflater.inflate(R.layout.activity_3x3, gameLayout, false)
+            gameLayout.addView(newItem)
 
         }
     }
