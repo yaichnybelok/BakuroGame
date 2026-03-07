@@ -6,7 +6,6 @@ import android.view.LayoutInflater
 import android.view.View
 import android.widget.EditText
 import android.widget.LinearLayout
-import android.widget.ListView
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.app.AppCompatDelegate
@@ -20,6 +19,7 @@ class Game : AppCompatActivity() {
         setContentView(R.layout.activity_game)
 
         val sharedPref = getSharedPreferences("data", Context.MODE_PRIVATE)
+        val corrTxt = findViewById<TextView>(R.id.corrTxt)
         val text = findViewById<TextView>(R.id.textView)
         val gameLayout = findViewById<LinearLayout>(R.id.gameLayout)
         val checkBtn = findViewById<MaterialButton>(R.id.checkBtn)
@@ -76,7 +76,12 @@ class Game : AppCompatActivity() {
 
                 if ((text_2_2_edit.text.toString() == solutions[0].toString()) && (text_3_2_edit.text.toString() == solutions[1].toString()) && (text_2_3_edit.text.toString() == solutions[2].toString()) && (text_3_3_edit.text.toString() == solutions[3].toString())) {
 
-                    text.text = "Решение верно!"
+                    corrTxt.text = "Решение верно!"
+
+                }
+                else {
+
+                    corrTxt.text = "Решение неверно!\nОжидание нового решения..."
 
                 }
 
