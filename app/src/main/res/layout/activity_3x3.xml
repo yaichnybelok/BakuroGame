@@ -5,8 +5,341 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+    <EditText
+        android:id="@+id/text_7_7_edit"
+        android:layout_width="40dp"
+        android:layout_height="30dp"
+        android:ems="10"
+        android:imeOptions="actionNext"
+        android:inputType="number"
+        android:maxLength="1"
+        android:textSize="8sp"
+        android:gravity="center"
+        app:layout_constraintBottom_toTopOf="@+id/divider6"
+        app:layout_constraintEnd_toStartOf="@+id/divider5"
+        app:layout_constraintStart_toEndOf="@+id/divider26"
+        app:layout_constraintTop_toBottomOf="@+id/divider21" />
+
+    <EditText
+        android:id="@+id/text_7_6_edit"
+        android:layout_width="40dp"
+        android:layout_height="30dp"
+        android:ems="10"
+        android:imeOptions="actionNext"
+        android:inputType="number"
+        android:maxLength="1"
+        android:textSize="8sp"
+        android:gravity="center"
+        app:layout_constraintBottom_toTopOf="@+id/divider21"
+        app:layout_constraintEnd_toStartOf="@+id/divider5"
+        app:layout_constraintStart_toEndOf="@+id/divider26"
+        app:layout_constraintTop_toBottomOf="@+id/divider20" />
+
+    <EditText
+        android:id="@+id/text_6_7_edit"
+        android:layout_width="40dp"
+        android:layout_height="30dp"
+        android:ems="10"
+        android:imeOptions="actionNext"
+        android:inputType="number"
+        android:maxLength="1"
+        android:textSize="8sp"
+        android:gravity="center"
+        app:layout_constraintBottom_toTopOf="@+id/divider6"
+        app:layout_constraintEnd_toStartOf="@+id/divider26"
+        app:layout_constraintStart_toEndOf="@+id/divider25"
+        app:layout_constraintTop_toBottomOf="@+id/divider21" />
+
+    <EditText
+        android:id="@+id/text_6_6_edit"
+        android:layout_width="40dp"
+        android:layout_height="30dp"
+        android:ems="10"
+        android:imeOptions="actionNext"
+        android:inputType="number"
+        android:maxLength="1"
+        android:textSize="8sp"
+        android:gravity="center"
+        app:layout_constraintBottom_toTopOf="@+id/divider21"
+        app:layout_constraintEnd_toStartOf="@+id/divider26"
+        app:layout_constraintStart_toEndOf="@+id/divider25"
+        app:layout_constraintTop_toBottomOf="@+id/divider20" />
+
+    <EditText
+        android:id="@+id/text_6_5_edit"
+        android:layout_width="40dp"
+        android:layout_height="30dp"
+        android:ems="10"
+        android:imeOptions="actionNext"
+        android:inputType="number"
+        android:maxLength="1"
+        android:textSize="8sp"
+        android:gravity="center"
+        app:layout_constraintBottom_toTopOf="@+id/divider20"
+        app:layout_constraintEnd_toStartOf="@+id/divider26"
+        app:layout_constraintStart_toEndOf="@+id/divider25"
+        app:layout_constraintTop_toBottomOf="@+id/divider19" />
+
+    <EditText
+        android:id="@+id/text_6_4_edit"
+        android:layout_width="40dp"
+        android:layout_height="30dp"
+        android:ems="10"
+        android:imeOptions="actionNext"
+        android:inputType="number"
+        android:maxLength="1"
+        android:textSize="8sp"
+        android:gravity="center"
+        app:layout_constraintBottom_toTopOf="@+id/divider19"
+        app:layout_constraintEnd_toStartOf="@+id/divider26"
+        app:layout_constraintStart_toEndOf="@+id/divider25"
+        app:layout_constraintTop_toBottomOf="@+id/divider4" />
+
+    <EditText
+        android:id="@+id/text_5_5_edit"
+        android:layout_width="40dp"
+        android:layout_height="30dp"
+        android:ems="10"
+        android:imeOptions="actionNext"
+        android:inputType="number"
+        android:maxLength="1"
+        android:textSize="8sp"
+        android:gravity="center"
+        app:layout_constraintBottom_toTopOf="@+id/divider20"
+        app:layout_constraintEnd_toStartOf="@+id/divider25"
+        app:layout_constraintStart_toEndOf="@+id/divider24"
+        app:layout_constraintTop_toBottomOf="@+id/divider19" />
+
+    <EditText
+        android:id="@+id/text_5_4_edit"
+        android:layout_width="40dp"
+        android:layout_height="30dp"
+        android:ems="10"
+        android:imeOptions="actionNext"
+        android:inputType="number"
+        android:maxLength="1"
+        android:textSize="8sp"
+        android:gravity="center"
+        app:layout_constraintBottom_toTopOf="@+id/divider19"
+        app:layout_constraintEnd_toStartOf="@+id/divider25"
+        app:layout_constraintStart_toEndOf="@+id/divider24"
+        app:layout_constraintTop_toBottomOf="@+id/divider4" />
+
+    <EditText
+        android:id="@+id/text_5_3_edit"
+        android:layout_width="40dp"
+        android:layout_height="30dp"
+        android:ems="10"
+        android:imeOptions="actionNext"
+        android:inputType="number"
+        android:maxLength="1"
+        android:textSize="8sp"
+        android:gravity="center"
+        app:layout_constraintBottom_toTopOf="@+id/divider4"
+        app:layout_constraintEnd_toStartOf="@+id/divider25"
+        app:layout_constraintStart_toEndOf="@+id/divider24"
+        app:layout_constraintTop_toBottomOf="@+id/divider3" />
+
+    <EditText
+        android:id="@+id/text_5_2_edit"
+        android:layout_width="40dp"
+        android:layout_height="30dp"
+        android:ems="10"
+        android:imeOptions="actionNext"
+        android:inputType="number"
+        android:maxLength="1"
+        android:textSize="8sp"
+        android:gravity="center"
+        app:layout_constraintBottom_toTopOf="@+id/divider3"
+        app:layout_constraintEnd_toStartOf="@+id/divider25"
+        app:layout_constraintStart_toEndOf="@+id/divider24"
+        app:layout_constraintTop_toBottomOf="@+id/divider8" />
+
+    <EditText
+        android:id="@+id/text_4_3_edit"
+        android:layout_width="40dp"
+        android:layout_height="30dp"
+        android:ems="10"
+        android:imeOptions="actionNext"
+        android:inputType="number"
+        android:maxLength="1"
+        android:textSize="8sp"
+        android:gravity="center"
+        app:layout_constraintBottom_toTopOf="@+id/divider4"
+        app:layout_constraintEnd_toStartOf="@+id/divider24"
+        app:layout_constraintStart_toEndOf="@+id/divider23"
+        app:layout_constraintTop_toBottomOf="@+id/divider3" />
+
+    <EditText
+        android:id="@+id/text_4_2_edit"
+        android:layout_width="40dp"
+        android:layout_height="30dp"
+        android:ems="10"
+        android:imeOptions="actionNext"
+        android:inputType="number"
+        android:maxLength="1"
+        android:textSize="8sp"
+        android:gravity="center"
+        app:layout_constraintBottom_toTopOf="@+id/divider3"
+        app:layout_constraintEnd_toStartOf="@+id/divider24"
+        app:layout_constraintStart_toEndOf="@+id/divider23"
+        app:layout_constraintTop_toBottomOf="@+id/divider8" />
+
+    <EditText
+        android:id="@+id/text_3_5_edit"
+        android:layout_width="40dp"
+        android:layout_height="30dp"
+        android:ems="10"
+        android:imeOptions="actionNext"
+        android:inputType="number"
+        android:maxLength="1"
+        android:textSize="8sp"
+        android:gravity="center"
+        app:layout_constraintBottom_toTopOf="@+id/divider20"
+        app:layout_constraintEnd_toStartOf="@+id/divider23"
+        app:layout_constraintStart_toEndOf="@+id/divider22"
+        app:layout_constraintTop_toBottomOf="@+id/divider19" />
+
+    <EditText
+        android:id="@+id/text_3_4_edit"
+        android:layout_width="40dp"
+        android:layout_height="30dp"
+        android:ems="10"
+        android:gravity="center"
+        android:imeOptions="actionNext"
+        android:inputType="number"
+        android:maxLength="1"
+        android:textSize="8sp"
+        app:layout_constraintBottom_toTopOf="@+id/divider19"
+        app:layout_constraintEnd_toStartOf="@+id/divider23"
+        app:layout_constraintStart_toEndOf="@+id/divider22"
+        app:layout_constraintTop_toBottomOf="@+id/divider4" />
+
+    <EditText
+        android:id="@+id/text_3_3_edit"
+        android:layout_width="40dp"
+        android:layout_height="30dp"
+        android:ems="10"
+        android:imeOptions="actionNext"
+        android:inputType="number"
+        android:maxLength="1"
+        android:textSize="8sp"
+        android:gravity="center"
+        app:layout_constraintBottom_toTopOf="@+id/divider4"
+        app:layout_constraintEnd_toStartOf="@+id/divider23"
+        app:layout_constraintStart_toEndOf="@+id/divider22"
+        app:layout_constraintTop_toBottomOf="@+id/divider3" />
+
+    <EditText
+        android:id="@+id/text_2_5_edit"
+        android:layout_width="40dp"
+        android:layout_height="30dp"
+        android:ems="10"
+        android:imeOptions="actionNext"
+        android:inputType="number"
+        android:maxLength="1"
+        android:textSize="8sp"
+        android:gravity="center"
+        app:layout_constraintBottom_toTopOf="@+id/divider20"
+        app:layout_constraintEnd_toStartOf="@+id/divider22"
+        app:layout_constraintStart_toEndOf="@+id/divider11"
+        app:layout_constraintTop_toBottomOf="@+id/divider19" />
+
+    <EditText
+        android:id="@+id/text_2_4_edit"
+        android:layout_width="40dp"
+        android:layout_height="30dp"
+        android:ems="10"
+        android:imeOptions="actionNext"
+        android:inputType="number"
+        android:maxLength="1"
+        android:textSize="8sp"
+        android:gravity="center"
+        app:layout_constraintBottom_toTopOf="@+id/divider19"
+        app:layout_constraintEnd_toStartOf="@+id/divider22"
+        app:layout_constraintStart_toEndOf="@+id/divider11"
+        app:layout_constraintTop_toBottomOf="@+id/divider4" />
+
     <TextView
-        android:id="@+id/text_3_4__3"
+        android:id="@+id/text_5_6__2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0000"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="@+id/text_5_6__10"
+        app:layout_constraintTop_toBottomOf="@+id/text_5_6__10" />
+
+    <TextView
+        android:id="@+id/text_5_7__10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="14dp"
+        android:text="00"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toStartOf="@+id/divider25"
+        app:layout_constraintTop_toBottomOf="@+id/divider21" />
+
+    <TextView
+        android:id="@+id/text_4_5__2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0000"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="@+id/text_4_5__10"
+        app:layout_constraintTop_toBottomOf="@+id/text_4_5__10" />
+
+    <TextView
+        android:id="@+id/text_5_6__10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="14dp"
+        android:text="00"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toStartOf="@+id/divider25"
+        app:layout_constraintTop_toBottomOf="@+id/divider20" />
+
+    <TextView
+        android:id="@+id/text_7_5__10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="39dp"
+        android:text="00"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toStartOf="@+id/divider5"
+        app:layout_constraintTop_toBottomOf="@+id/divider19" />
+
+    <TextView
+        android:id="@+id/text_6_3__2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0000"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="@+id/text_6_3__10"
+        app:layout_constraintTop_toBottomOf="@+id/text_6_3__10" />
+
+    <TextView
+        android:id="@+id/text_6_3__10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="39dp"
+        android:text="00"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toStartOf="@+id/divider26"
+        app:layout_constraintTop_toBottomOf="@+id/divider3" />
+
+    <TextView
+        android:id="@+id/text_7_5__2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0000"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="@+id/text_7_5__10"
+        app:layout_constraintTop_toBottomOf="@+id/text_7_5__10" />
+
+    <TextView
+        android:id="@+id/text_4_5__10"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="14dp"
@@ -16,25 +349,25 @@
         app:layout_constraintTop_toBottomOf="@+id/divider19" />
 
     <TextView
-        android:id="@+id/text_3_4__"
+        android:id="@+id/text_5_7__2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="0000"
         android:textSize="12sp"
-        app:layout_constraintStart_toStartOf="@+id/text_3_4__3"
-        app:layout_constraintTop_toBottomOf="@+id/text_3_4__3" />
+        app:layout_constraintStart_toStartOf="@+id/text_5_7__10"
+        app:layout_constraintTop_toBottomOf="@+id/text_5_7__10" />
 
     <TextView
-        android:id="@+id/text_3_4__2"
+        android:id="@+id/text_4_4__2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="0000"
         android:textSize="12sp"
-        app:layout_constraintStart_toStartOf="@+id/text_3_4__10"
-        app:layout_constraintTop_toBottomOf="@+id/text_3_4__10" />
+        app:layout_constraintStart_toStartOf="@+id/text_4_4__10"
+        app:layout_constraintTop_toBottomOf="@+id/text_4_4__10" />
 
     <TextView
-        android:id="@+id/text_3_4__10"
+        android:id="@+id/text_4_4__10"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="14dp"
@@ -154,7 +487,7 @@
         app:layout_constraintTop_toTopOf="@+id/divider8" />
 
     <TextView
-        android:id="@+id/text_1_4__3"
+        android:id="@+id/text_1_4__2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="0000"
@@ -707,15 +1040,18 @@
         app:layout_constraintTop_toBottomOf="@+id/divider3" />
 
     <EditText
-        android:id="@+id/text_2_2_edit"
-        android:layout_width="60dp"
-        android:layout_height="53dp"
+        android:id="@+id/text_2_3_edit"
+        android:layout_width="40dp"
+        android:layout_height="30dp"
         android:ems="10"
         android:imeOptions="actionNext"
         android:inputType="number"
         android:maxLength="1"
-        android:textSize="24sp"
-        tools:layout_editor_absoluteX="181dp"
-        tools:layout_editor_absoluteY="489dp" />
+        android:textSize="8sp"
+        android:gravity="center"
+        app:layout_constraintBottom_toTopOf="@+id/divider4"
+        app:layout_constraintEnd_toStartOf="@+id/divider22"
+        app:layout_constraintStart_toEndOf="@+id/divider11"
+        app:layout_constraintTop_toBottomOf="@+id/divider3" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
