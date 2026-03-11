@@ -12,6 +12,7 @@ import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.app.AppCompatDelegate
 import com.google.android.material.button.MaterialButton
+import com.google.android.material.dialog.MaterialAlertDialogBuilder
 
 class Game : AppCompatActivity() {
 
@@ -91,8 +92,21 @@ class Game : AppCompatActivity() {
             checkBtn.setOnClickListener {
 
                 if ((text_2_2_edit.text.toString() == solutions[0].toString()) && (text_3_2_edit.text.toString() == solutions[1].toString()) && (text_2_3_edit.text.toString() == solutions[2].toString()) && (text_3_3_edit.text.toString() == solutions[3].toString())) {
-
-                    corrTxt.text = "Решение верно!"
+                    val starsXml = layoutInflater.inflate(R.layout.three_star, null)
+                    MaterialAlertDialogBuilder(
+                        this,
+                        com.google.android.material.R.style.ThemeOverlay_Material3_MaterialAlertDialog_Centered
+                    )
+                        .setTitle("Решение верно!")
+                        .setNeutralButton("На главную") { dialog, which ->
+                            val intent = Intent(this, MainActivity::class.java)
+                            startActivity(intent)
+                        }
+                        .setPositiveButton("Следующее задание") { dialog, which ->
+                            val intent = Intent(this, Game::class.java)
+                            startActivity(intent)
+                        }.setView(starsXml)
+                        .show()
 
                 } else {
 
@@ -183,7 +197,7 @@ class Game : AppCompatActivity() {
 
 
             fun setValues(summ: Int, int10: TextView, int2: TextView) {
-                int10.text = summ.toString()
+                int10.text = summ.toString().padStart(3, ' ')
                 int2.text = summ.toString(2).padStart(4, '0')
             }
 
@@ -244,7 +258,21 @@ class Game : AppCompatActivity() {
                         .toIntOrNull()) && (txt6_7 + txt7_7 == row8sum.toString().toIntOrNull())
                 ) {
 
-                    corrTxt.text = "Решение верно!"
+                    val starsXml = layoutInflater.inflate(R.layout.three_star, null)
+                    MaterialAlertDialogBuilder(
+                        this,
+                        com.google.android.material.R.style.ThemeOverlay_Material3_MaterialAlertDialog_Centered
+                    )
+                        .setTitle("Решение верно!")
+                        .setNeutralButton("На главную") { dialog, which ->
+                            val intent = Intent(this, MainActivity::class.java)
+                            startActivity(intent)
+                        }
+                        .setPositiveButton("Следующее задание") { dialog, which ->
+                            val intent = Intent(this, Game::class.java)
+                            startActivity(intent)
+                        }.setView(starsXml)
+                        .show()
 
                 } else {
 
