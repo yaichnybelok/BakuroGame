@@ -8,6 +8,24 @@
     android:backgroundTint="@color/PrimaryContainer"
     tools:context=".MainActivity">
 
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/resetBtn"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="45dp"
+        android:layout_marginEnd="30dp"
+        android:drawablePadding="0dp"
+        android:focusable="true"
+        android:paddingRight="15dp"
+        android:text="Button"
+        app:backgroundTint="#00DEA6A6"
+        app:icon="@drawable/replay_24dp_1f1f1f_fill0_wght400_grad0_opsz24"
+        app:iconGravity="textStart"
+        app:iconPadding="0dp"
+        app:iconTint="#000000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
     <TextView
         android:id="@+id/textView"
         android:layout_width="wrap_content"
@@ -59,26 +77,32 @@
         android:id="@+id/corrTxt"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="100dp"
+        android:layout_marginTop="52dp"
         android:gravity="center"
         android:text="Ожидание решения..."
         android:textSize="24sp"
         app:layout_constraintBottom_toTopOf="@+id/gameLayout"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintEnd_toStartOf="@+id/resetBtn"
+        app:layout_constraintStart_toEndOf="@+id/backBtn"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.086" />
 
     <com.google.android.material.button.MaterialButton
-        android:id="@+id/skipBtn"
-        android:layout_width="200dp"
-        android:layout_height="60dp"
-        android:layout_marginTop="6dp"
-        android:backgroundTint="@color/PrimaryContainer"
-        android:text="Пропустить"
-        android:textColor="#020202"
-        android:textSize="20sp"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:id="@+id/backBtn"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="45dp"
+        android:drawablePadding="0dp"
+        android:focusable="true"
+        android:paddingRight="15dp"
+        android:text="Button"
+        app:backgroundTint="#00DEA6A6"
+        app:icon="@drawable/arrow_back_24dp_1f1f1f_fill0_wght400_grad0_opsz24"
+        app:iconGravity="textStart"
+        app:iconPadding="0dp"
+        app:iconTint="#000000"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/checkBtn" />
+        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

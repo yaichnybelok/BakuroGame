@@ -2,6 +2,7 @@ package com.example.project
 
 import android.annotation.SuppressLint
 import android.content.Context
+import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -25,16 +26,25 @@ class Game : AppCompatActivity() {
         val text = findViewById<TextView>(R.id.textView)
         val gameLayout = findViewById<LinearLayout>(R.id.gameLayout)
         val checkBtn = findViewById<MaterialButton>(R.id.checkBtn)
-        val skipBtn = findViewById<MaterialButton>(R.id.skipBtn)
+        val backBtn = findViewById<MaterialButton>(R.id.backBtn)
+        val resetBtn = findViewById<MaterialButton>(R.id.resetBtn)
 
         val difficulty = sharedPref.getInt("DIFFICULTY", -1) + 1
         val difficulties = listOf("Легкая(1)", "Средняя(2)", "Высокая(3)")
         val curr_difficulty = difficulties[difficulty - 1]
         text.text = "Сложность: $curr_difficulty"
 
-        skipBtn.setOnClickListener {
+        backBtn.setOnClickListener {
 
+            val intent = Intent(this, MainActivity::class.java)
+            startActivity(intent)
 
+        }
+
+        resetBtn.setOnClickListener {
+
+            val intent = Intent(this, Game::class.java)
+            startActivity(intent)
 
         }
 
