@@ -9,6 +9,25 @@
     tools:context=".MainActivity">
 
     <com.google.android.material.button.MaterialButton
+        android:id="@+id/menuBtn"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="30dp"
+        android:drawablePadding="0dp"
+        android:focusable="true"
+        android:paddingRight="15dp"
+        android:text="Button"
+        app:backgroundTint="#00DEA6A6"
+        app:icon="@drawable/menu_24dp_1f1f1f_fill0_wght400_grad0_opsz24"
+        app:iconGravity="textStart"
+        app:iconPadding="0dp"
+        app:iconSize="21dp"
+        app:iconTint="#000000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/playBtn"
         android:layout_width="240dp"
         android:layout_height="70dp"

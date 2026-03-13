@@ -1,14 +1,15 @@
 package com.example.project
 
-import android.annotation.SuppressLint
 import android.content.Context
 import android.content.Intent
 import android.os.Bundle
-import android.widget.Button
-import androidx.activity.enableEdgeToEdge
+import android.view.Menu
+import android.view.MenuInflater
+import android.view.View
+import android.widget.PopupMenu
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.app.AppCompatDelegate
-import com.google.android.material.appbar.MaterialToolbar
+import com.google.android.material.button.MaterialButton
 import com.google.android.material.dialog.MaterialAlertDialogBuilder
 
 
@@ -20,13 +21,30 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         val sharedPref = getSharedPreferences("data", Context.MODE_PRIVATE)
-        val playBtn = findViewById<Button>(R.id.playBtn)
-        val difficultyBtn = findViewById<Button>(R.id.difficultyBtn)
+        val playBtn = findViewById<MaterialButton>(R.id.playBtn)
+        val difficultyBtn = findViewById<MaterialButton>(R.id.difficultyBtn)
+        val menuBtn: View = findViewById(R.id.menuBtn)
 
 
         with(sharedPref.edit()) {
             putInt("DIFFICULTY", 0)
             apply()
+        }
+
+        menuBtn.setOnClickListener {
+
+            val popup = PopupMenu(this, menuBtn)
+            popup.menuInflater.inflate(R.menu.overflow_menu, popup.menu)
+            popup.setOnMenuItemClickListener { item ->
+                when (item.itemId) {
+                    R.id.guide -> {
+                        true
+                    }
+                    else -> false
+                }
+            }
+            popup.show()
+
         }
 
         difficultyBtn.setOnClickListener {
