@@ -30,6 +30,10 @@ class MainActivity : AppCompatActivity() {
             putInt("DIFFICULTY", 0)
             apply()
         }
+        with(sharedPref.edit()) {
+            putInt("BIT", 4)
+            apply()
+        }
 
         menuBtn.setOnClickListener {
 
@@ -38,6 +42,8 @@ class MainActivity : AppCompatActivity() {
             popup.setOnMenuItemClickListener { item ->
                 when (item.itemId) {
                     R.id.guide -> {
+                        val intent = Intent(this, Guide::class.java)
+                        startActivity(intent)
                         true
                     }
                     else -> false
@@ -49,20 +55,38 @@ class MainActivity : AppCompatActivity() {
 
         difficultyBtn.setOnClickListener {
 
-            var chosen = sharedPref.getInt("DIFFICULTY", -1)
-            val items = arrayOf("Легкая(1)", "Средняя(2)", "Высокая(3)")
+            var chosen_diff = sharedPref.getInt("DIFFICULTY", -1)
+            var chosen_bit = sharedPref.getInt("BIT", -1)
+            val difficultties = arrayOf("Легкая(1)", "Средняя(2)", "Высокая(3)")
+            val bits = arrayOf("4 биты", "5 бит")
 
             MaterialAlertDialogBuilder(this).setTitle("Выберите сложность:")
-                .setSingleChoiceItems(items, chosen) { _, which ->
-                    chosen = which
+                .setSingleChoiceItems(difficultties, chosen_diff) { _, which ->
+                    chosen_diff = which
                 }
                 .setPositiveButton("OK") { _, _ ->
                     with(sharedPref.edit()) {
-                        putInt("DIFFICULTY", chosen)
+                        putInt("DIFFICULTY", chosen_diff)
                         apply()
                     }
-                    val diff = chosen + 1
-                    difficultyBtn.text = "Сложность: $diff"
+                    val diff = chosen_diff + 1
+
+                    MaterialAlertDialogBuilder(this).setTitle("Выберите сложность:")
+                        .setSingleChoiceItems(bits, chosen_bit) { _, which ->
+                            chosen_bit = which
+                        }
+                        .setPositiveButton("OK") { _, _ ->
+                            with(sharedPref.edit()) {
+                                putInt("BIT", chosen_bit)
+                                apply()
+                            }
+                            val bit = chosen_bit + 4
+                            difficultyBtn.text = "Сложность: $diff\nРазрядность: $bit"
+                        }
+                        .setNegativeButton("Отмена", null)
+                        .show()
+
+
                 }
                 .setNegativeButton("Отмена", null)
                 .show()

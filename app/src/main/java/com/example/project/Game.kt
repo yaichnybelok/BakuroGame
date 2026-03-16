@@ -31,7 +31,10 @@ class Game : AppCompatActivity() {
         val difficulty = sharedPref.getInt("DIFFICULTY", -1) + 1
         val difficulties = listOf("Легкая(1)", "Средняя(2)", "Высокая(3)")
         val curr_difficulty = difficulties[difficulty - 1]
-        text.text = "Сложность: $curr_difficulty"
+        val bit = sharedPref.getInt("BIT", -1)
+        val bits = listOf("4 бит", "5 бит")
+        val curr_bit = difficulties[difficulty - 4]
+        text.text = "Сложность: $curr_difficulty\nРазрядность: $curr_bit"
 
         backBtn.setOnClickListener {
 
