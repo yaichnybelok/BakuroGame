@@ -31,7 +31,7 @@ class MainActivity : AppCompatActivity() {
             apply()
         }
         with(sharedPref.edit()) {
-            putInt("BIT", 4)
+            putInt("BIT", 0)
             apply()
         }
 

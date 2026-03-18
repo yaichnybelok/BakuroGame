@@ -13,12 +13,14 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.app.AppCompatDelegate
 import com.google.android.material.button.MaterialButton
 import com.google.android.material.dialog.MaterialAlertDialogBuilder
+import kotlin.random.Random
 
 class Game : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO)
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_game)
+
 
         val sharedPref = getSharedPreferences("data", Context.MODE_PRIVATE)
         val corrTxt = findViewById<TextView>(R.id.corrTxt)
@@ -31,9 +33,9 @@ class Game : AppCompatActivity() {
         val difficulty = sharedPref.getInt("DIFFICULTY", -1) + 1
         val difficulties = listOf("Легкая(1)", "Средняя(2)", "Высокая(3)")
         val curr_difficulty = difficulties[difficulty - 1]
-        val bit = sharedPref.getInt("BIT", -1)
+        val bit = sharedPref.getInt("BIT", 0)
         val bits = listOf("4 бит", "5 бит")
-        val curr_bit = difficulties[difficulty - 4]
+        val curr_bit = bits[bit]
         text.text = "Сложность: $curr_difficulty\nРазрядность: $curr_bit"
 
         backBtn.setOnClickListener {
@@ -71,51 +73,126 @@ class Game : AppCompatActivity() {
             val text_3_2_edit = findViewById<EditText>(R.id.text_3_2_edit)
             val text_3_3_edit = findViewById<EditText>(R.id.text_3_3_edit)
 
-            val solutions = mutableListOf(1, 2, 4, 8)
-            solutions.shuffle()
+            if (bit == 0) {
 
-            val row1sum = solutions[0] + solutions[1]
-            val row2sum = solutions[2] + solutions[3]
-            val col1sum = solutions[0] + solutions[2]
-            val col2sum = solutions[1] + solutions[3]
+                val solutions = mutableListOf(1, 2, 4, 8)
+                solutions.shuffle()
 
-            fun setValues(summ: Int, int10: TextView, int2: TextView) {
-                int10.text = summ.toString()
-                int2.text = summ.toString(2).padStart(4, '0')
-            }
+                val row1sum = solutions[0] + solutions[1]
+                val row2sum = solutions[2] + solutions[3]
+                val col1sum = solutions[0] + solutions[2]
+                val col2sum = solutions[1] + solutions[3]
 
-            setValues(row1sum, text_1_2__10, text_1_2__2)
-            setValues(row2sum, text_1_3__10, text_1_3__2)
+                fun setValues(summ: Int, int10: TextView, int2: TextView) {
+                    int10.text = summ.toString()
+                    int2.text = summ.toString(2).padStart(4, '0')
+                }
 
-            setValues(col1sum, text_2_1__10, text_2_1__2)
-            setValues(col2sum, text_3_1__10, text_3_1__2)
+                setValues(row1sum, text_1_2__10, text_1_2__2)
+                setValues(row2sum, text_1_3__10, text_1_3__2)
 
-            checkBtn.setOnClickListener {
+                setValues(col1sum, text_2_1__10, text_2_1__2)
+                setValues(col2sum, text_3_1__10, text_3_1__2)
 
-                if ((text_2_2_edit.text.toString() == solutions[0].toString()) && (text_3_2_edit.text.toString() == solutions[1].toString()) && (text_2_3_edit.text.toString() == solutions[2].toString()) && (text_3_3_edit.text.toString() == solutions[3].toString())) {
-                    val starsXml = layoutInflater.inflate(R.layout.three_star, null)
-                    MaterialAlertDialogBuilder(
-                        this,
-                        com.google.android.material.R.style.ThemeOverlay_Material3_MaterialAlertDialog_Centered
-                    )
-                        .setTitle("Решение верно!")
-                        .setNeutralButton("На главную") { dialog, which ->
-                            val intent = Intent(this, MainActivity::class.java)
-                            startActivity(intent)
-                        }
-                        .setPositiveButton("Следующее задание") { dialog, which ->
-                            val intent = Intent(this, Game::class.java)
-                            startActivity(intent)
-                        }.setView(starsXml)
-                        .show()
 
-                } else {
 
-                    corrTxt.text = "Решение неверно!\nОжидание нового решения..."
+                checkBtn.setOnClickListener {
+
+                    if ((text_2_2_edit.text.toString() == solutions[0].toString()) && (text_3_2_edit.text.toString() == solutions[1].toString()) && (text_2_3_edit.text.toString() == solutions[2].toString()) && (text_3_3_edit.text.toString() == solutions[3].toString())) {
+                        val starsXml = layoutInflater.inflate(R.layout.three_star, null)
+                        MaterialAlertDialogBuilder(
+                            this,
+                            com.google.android.material.R.style.ThemeOverlay_Material3_MaterialAlertDialog_Centered
+                        )
+                            .setTitle("Решение верно!")
+                            .setNeutralButton("На главную") { dialog, which ->
+                                val intent = Intent(this, MainActivity::class.java)
+                                startActivity(intent)
+                            }
+                            .setPositiveButton("Следующее задание") { dialog, which ->
+                                val intent = Intent(this, Game::class.java)
+                                startActivity(intent)
+                            }.setView(starsXml)
+                            .show()
+
+                    } else {
+
+                        corrTxt.text = "Решение неверно!\nОжидание нового решения..."
+
+                    }
 
                 }
 
             }
+            else if (bit == 1) {
+
+                val solutions = mutableListOf(1, 2, 4, 8, 16)
+                solutions.shuffle()
+
+                val fst = solutions[Random.nextInt(solutions.size)]
+                solutions.remove(fst)
+                val sec = solutions[Random.nextInt(solutions.size)]
+                solutions.remove(sec)
+                val trd = solutions[Random.nextInt(solutions.size)]
+                solutions.remove(trd)
+                val fth = solutions[Random.nextInt(solutions.size)]
+                solutions.remove(fth)
+
+
+
+
+                val row1sum = fst + sec
+                val row2sum = trd + fth
+                val col1sum = fst + trd
+                val col2sum = sec + fth
+
+                fun setValues(summ: Int, int10: TextView, int2: TextView) {
+                    int10.text = summ.toString()
+                    int2.text = summ.toString(2).padStart(5, '0')
+                }
+
+                setValues(row1sum, text_1_2__10, text_1_2__2)
+                setValues(row2sum, text_1_3__10, text_1_3__2)
+
+                setValues(col1sum, text_2_1__10, text_2_1__2)
+                setValues(col2sum, text_3_1__10, text_3_1__2)
+
+
+
+                checkBtn.setOnClickListener {
+
+                    if ((text_2_2_edit.text.toString() == fst.toString()) && (text_3_2_edit.text.toString() == sec.toString()) && (text_2_3_edit.text.toString() == trd.toString()) && (text_3_3_edit.text.toString() == fth.toString())) {
+                        val starsXml = layoutInflater.inflate(R.layout.three_star, null)
+                        MaterialAlertDialogBuilder(
+                            this,
+                            com.google.android.material.R.style.ThemeOverlay_Material3_MaterialAlertDialog_Centered
+                        )
+                            .setTitle("Решение верно!")
+                            .setNeutralButton("На главную") { dialog, which ->
+                                val intent = Intent(this, MainActivity::class.java)
+                                startActivity(intent)
+                            }
+                            .setPositiveButton("Следующее задание") { dialog, which ->
+                                val intent = Intent(this, Game::class.java)
+                                startActivity(intent)
+                            }.setView(starsXml)
+                            .show()
+
+                    } else {
+
+                        corrTxt.text = "Решение неверно!\nОжидание нового решения..."
+
+                    }
+
+                }
+
+
+            }
+
+
+
+
+
 
         } else if (difficulty == 2) {
 
