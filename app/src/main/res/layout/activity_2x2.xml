@@ -179,7 +179,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="4dp"
         android:text="0000"
-        android:textSize="24sp"
+        android:textSize="20sp"
         app:layout_constraintStart_toStartOf="@+id/text_1_2__10"
         app:layout_constraintTop_toBottomOf="@+id/text_1_2__10" />
 
@@ -189,7 +189,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="4dp"
         android:text="0000"
-        android:textSize="24sp"
+        android:textSize="20sp"
         app:layout_constraintStart_toEndOf="@+id/text_1_3__10"
         app:layout_constraintStart_toStartOf="@+id/text_1_3__10"
         app:layout_constraintTop_toBottomOf="@+id/text_1_3__10" />
@@ -212,7 +212,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="4dp"
         android:text="0000"
-        android:textSize="24sp"
+        android:textSize="20sp"
         app:layout_constraintStart_toEndOf="@+id/text_1_3__10"
         app:layout_constraintStart_toStartOf="@+id/text_2_1__10"
         app:layout_constraintTop_toBottomOf="@+id/text_2_1__10" />
@@ -234,7 +234,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="4dp"
         android:text="0000"
-        android:textSize="24sp"
+        android:textSize="20sp"
         app:layout_constraintStart_toEndOf="@+id/text_1_3__10"
         app:layout_constraintStart_toStartOf="@+id/text_3_1__10"
         app:layout_constraintTop_toBottomOf="@+id/text_3_1__10" />
@@ -257,7 +257,7 @@
         android:ems="10"
         android:inputType="number"
         android:maxLength="2"
-        android:textSize="24sp"
+        android:textSize="20sp"
         android:imeOptions="actionNext"
         app:layout_constraintBottom_toTopOf="@+id/divider9"
         app:layout_constraintEnd_toStartOf="@+id/divider10"

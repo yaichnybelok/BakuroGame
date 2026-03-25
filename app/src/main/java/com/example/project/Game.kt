@@ -249,113 +249,230 @@ class Game : AppCompatActivity() {
             val text_7_6_edit = newItem.findViewById<EditText>(R.id.text_7_6_edit)
             val text_7_7_edit = newItem.findViewById<EditText>(R.id.text_7_7_edit)
 
-            val solutions = mutableListOf(1, 2, 4, 8)
-            solutions.shuffle()
 
-            val row1sum = solutions[0] + solutions[1] + solutions[2] + solutions[3]
-            val row2sum = solutions[2] + solutions[3]
-            val row3sum = solutions[1] + solutions[2]
-            val col1sum = solutions[0] + solutions[2] + solutions[1]
-            val col2sum = solutions[1] + solutions[3] + solutions[2]
+            if (bit == 0) {
+                val solutions = mutableListOf(1, 2, 4, 8)
+                solutions.shuffle()
 
-
-            val row4sum = solutions[3] + solutions[0]
-            val col3sum = solutions[3] + solutions[2]
-
-            val row5sum = solutions[1] + solutions[0]
-            val col4sum = solutions[0] + solutions[3] + solutions[1] + solutions[2]
-
-            val row6sum = solutions[2] + solutions[3]
-            val col5sum = solutions[0] + solutions[3] + solutions[1] + solutions[2]
-
-            val row7sum = solutions[1] + solutions[3]
-            val col6sum = solutions[3] + solutions[0]
-
-            val row8sum = solutions[2] + solutions[0]
+                val row1sum = solutions[0] + solutions[1] + solutions[2] + solutions[3]
+                val row2sum = solutions[2] + solutions[3]
+                val row3sum = solutions[1] + solutions[2]
+                val col1sum = solutions[0] + solutions[2] + solutions[1]
+                val col2sum = solutions[1] + solutions[3] + solutions[2]
 
 
-            fun setValues(summ: Int, int10: TextView, int2: TextView) {
-                int10.text = summ.toString().padStart(3, ' ')
-                int2.text = summ.toString(2).padStart(4, '0')
-            }
+                val row4sum = solutions[3] + solutions[0]
+                val col3sum = solutions[3] + solutions[2]
 
-            setValues(row1sum, text_1_3__10, text_1_3__2)
-            setValues(row2sum, text_1_4__10, text_1_4__2)
-            setValues(row3sum, text_1_5__10, text_1_5__2)
+                val row5sum = solutions[1] + solutions[0]
+                val col4sum = solutions[0] + solutions[3] + solutions[1] + solutions[2]
 
-            setValues(row4sum, text_3_2__10_right, text_3_2__2_right)
-            setValues(row5sum, text_4_4__10, text_4_4__2)
-            setValues(row6sum, text_4_5__10, text_4_5__2)
-            setValues(row7sum, text_5_6__10, text_5_6__2)
-            setValues(row8sum, text_5_7__10, text_5_7__2)
+                val row6sum = solutions[2] + solutions[3]
+                val col5sum = solutions[0] + solutions[3] + solutions[1] + solutions[2]
 
-            setValues(col1sum, text_2_2__10, text_2_2__2)
-            setValues(col2sum, text_3_2__10_down, text_3_2__2_down)
-            setValues(col3sum, text_4_1__10, text_4_1__2)
-            setValues(col4sum, text_5_1__10, text_5_1__2)
-            setValues(col5sum, text_6_3__10, text_6_3__2)
-            setValues(col6sum, text_7_5__10, text_7_5__2)
+                val row7sum = solutions[1] + solutions[3]
+                val col6sum = solutions[3] + solutions[0]
+
+                val row8sum = solutions[2] + solutions[0]
 
 
-            checkBtn.setOnClickListener {
-                val txt2_3 = text_2_3_edit.text.toString().toIntOrNull() ?: 0
-                val txt2_4 = text_2_4_edit.text.toString().toIntOrNull() ?: 0
-                val txt2_5 = text_2_5_edit.text.toString().toIntOrNull() ?: 0
-                val txt3_3 = text_3_3_edit.text.toString().toIntOrNull() ?: 0
-                val txt3_4 = text_3_4_edit.text.toString().toIntOrNull() ?: 0
-                val txt3_5 = text_3_5_edit.text.toString().toIntOrNull() ?: 0
-                val txt4_2 = text_4_2_edit.text.toString().toIntOrNull() ?: 0
-                val txt4_3 = text_4_3_edit.text.toString().toIntOrNull() ?: 0
-                val txt5_2 = text_5_2_edit.text.toString().toIntOrNull() ?: 0
-                val txt5_3 = text_5_3_edit.text.toString().toIntOrNull() ?: 0
-                val txt5_4 = text_5_4_edit.text.toString().toIntOrNull() ?: 0
-                val txt5_5 = text_5_5_edit.text.toString().toIntOrNull() ?: 0
-                val txt6_4 = text_6_4_edit.text.toString().toIntOrNull() ?: 0
-                val txt6_5 = text_6_5_edit.text.toString().toIntOrNull() ?: 0
-                val txt6_6 = text_6_6_edit.text.toString().toIntOrNull() ?: 0
-                val txt6_7 = text_6_7_edit.text.toString().toIntOrNull() ?: 0
-                val txt7_6 = text_7_6_edit.text.toString().toIntOrNull() ?: 0
-                val txt7_7 = text_7_7_edit.text.toString().toIntOrNull() ?: 0
+                fun setValues(summ: Int, int10: TextView, int2: TextView) {
+                    int10.text = summ.toString().padStart(3, ' ')
+                    int2.text = summ.toString(2).padStart(4, '0')
+                }
+
+                setValues(row1sum, text_1_3__10, text_1_3__2)
+                setValues(row2sum, text_1_4__10, text_1_4__2)
+                setValues(row3sum, text_1_5__10, text_1_5__2)
+
+                setValues(row4sum, text_3_2__10_right, text_3_2__2_right)
+                setValues(row5sum, text_4_4__10, text_4_4__2)
+                setValues(row6sum, text_4_5__10, text_4_5__2)
+                setValues(row7sum, text_5_6__10, text_5_6__2)
+                setValues(row8sum, text_5_7__10, text_5_7__2)
+
+                setValues(col1sum, text_2_2__10, text_2_2__2)
+                setValues(col2sum, text_3_2__10_down, text_3_2__2_down)
+                setValues(col3sum, text_4_1__10, text_4_1__2)
+                setValues(col4sum, text_5_1__10, text_5_1__2)
+                setValues(col5sum, text_6_3__10, text_6_3__2)
+                setValues(col6sum, text_7_5__10, text_7_5__2)
 
 
-                if ((txt2_3 + txt2_4 + txt2_5 == col1sum.toString()
-                        .toIntOrNull()) && (txt3_3 + txt3_4 + txt3_5 == col2sum.toString()
-                        .toIntOrNull()) && (txt4_2 + txt4_3 == col3sum.toString()
-                        .toIntOrNull()) && (txt5_2 + txt5_3 + txt5_4 + txt5_5 == col4sum.toString()
-                        .toIntOrNull()) && (txt6_4 + txt6_5 + txt6_6 + txt6_7 == col5sum.toString()
-                        .toIntOrNull()) && (txt7_6 + txt7_7 == col6sum.toString()
-                        .toIntOrNull())
-                    &&
-                    (txt2_3 + txt3_3 + txt4_3 + txt5_3 == row1sum.toString()
-                        .toIntOrNull()) && (txt2_4 + txt3_4 == row2sum.toString()
-                        .toIntOrNull()) && (txt2_5 + txt3_5 == row3sum.toString()
-                        .toIntOrNull()) && (txt4_2 + txt5_2 == row4sum.toString()
-                        .toIntOrNull()) && (txt5_4 + txt6_4 == row5sum.toString()
-                        .toIntOrNull()) && (txt5_5 + txt6_5 == row6sum.toString()
-                        .toIntOrNull()) && (txt6_6 + txt7_6 == row7sum.toString()
-                        .toIntOrNull()) && (txt6_7 + txt7_7 == row8sum.toString().toIntOrNull())
-                ) {
+                checkBtn.setOnClickListener {
+                    val txt2_3 = text_2_3_edit.text.toString().toIntOrNull() ?: 0
+                    val txt2_4 = text_2_4_edit.text.toString().toIntOrNull() ?: 0
+                    val txt2_5 = text_2_5_edit.text.toString().toIntOrNull() ?: 0
+                    val txt3_3 = text_3_3_edit.text.toString().toIntOrNull() ?: 0
+                    val txt3_4 = text_3_4_edit.text.toString().toIntOrNull() ?: 0
+                    val txt3_5 = text_3_5_edit.text.toString().toIntOrNull() ?: 0
+                    val txt4_2 = text_4_2_edit.text.toString().toIntOrNull() ?: 0
+                    val txt4_3 = text_4_3_edit.text.toString().toIntOrNull() ?: 0
+                    val txt5_2 = text_5_2_edit.text.toString().toIntOrNull() ?: 0
+                    val txt5_3 = text_5_3_edit.text.toString().toIntOrNull() ?: 0
+                    val txt5_4 = text_5_4_edit.text.toString().toIntOrNull() ?: 0
+                    val txt5_5 = text_5_5_edit.text.toString().toIntOrNull() ?: 0
+                    val txt6_4 = text_6_4_edit.text.toString().toIntOrNull() ?: 0
+                    val txt6_5 = text_6_5_edit.text.toString().toIntOrNull() ?: 0
+                    val txt6_6 = text_6_6_edit.text.toString().toIntOrNull() ?: 0
+                    val txt6_7 = text_6_7_edit.text.toString().toIntOrNull() ?: 0
+                    val txt7_6 = text_7_6_edit.text.toString().toIntOrNull() ?: 0
+                    val txt7_7 = text_7_7_edit.text.toString().toIntOrNull() ?: 0
 
-                    val starsXml = layoutInflater.inflate(R.layout.three_star, null)
-                    MaterialAlertDialogBuilder(
-                        this,
-                        com.google.android.material.R.style.ThemeOverlay_Material3_MaterialAlertDialog_Centered
-                    )
-                        .setTitle("Решение верно!")
-                        .setNeutralButton("На главную") { dialog, which ->
-                            val intent = Intent(this, MainActivity::class.java)
-                            startActivity(intent)
-                        }
-                        .setPositiveButton("Следующее задание") { dialog, which ->
-                            val intent = Intent(this, Game::class.java)
-                            startActivity(intent)
-                        }.setView(starsXml)
-                        .show()
 
-                } else {
+                    if ((txt2_3 + txt2_4 + txt2_5 == col1sum.toString()
+                            .toIntOrNull()) && (txt3_3 + txt3_4 + txt3_5 == col2sum.toString()
+                            .toIntOrNull()) && (txt4_2 + txt4_3 == col3sum.toString()
+                            .toIntOrNull()) && (txt5_2 + txt5_3 + txt5_4 + txt5_5 == col4sum.toString()
+                            .toIntOrNull()) && (txt6_4 + txt6_5 + txt6_6 + txt6_7 == col5sum.toString()
+                            .toIntOrNull()) && (txt7_6 + txt7_7 == col6sum.toString()
+                            .toIntOrNull())
+                        &&
+                        (txt2_3 + txt3_3 + txt4_3 + txt5_3 == row1sum.toString()
+                            .toIntOrNull()) && (txt2_4 + txt3_4 == row2sum.toString()
+                            .toIntOrNull()) && (txt2_5 + txt3_5 == row3sum.toString()
+                            .toIntOrNull()) && (txt4_2 + txt5_2 == row4sum.toString()
+                            .toIntOrNull()) && (txt5_4 + txt6_4 == row5sum.toString()
+                            .toIntOrNull()) && (txt5_5 + txt6_5 == row6sum.toString()
+                            .toIntOrNull()) && (txt6_6 + txt7_6 == row7sum.toString()
+                            .toIntOrNull()) && (txt6_7 + txt7_7 == row8sum.toString().toIntOrNull())
+                    ) {
 
-                    corrTxt.text = "Решение неверно!\nОжидание нового решения..."
+                        val starsXml = layoutInflater.inflate(R.layout.three_star, null)
+                        MaterialAlertDialogBuilder(
+                            this,
+                            com.google.android.material.R.style.ThemeOverlay_Material3_MaterialAlertDialog_Centered
+                        )
+                            .setTitle("Решение верно!")
+                            .setNeutralButton("На главную") { dialog, which ->
+                                val intent = Intent(this, MainActivity::class.java)
+                                startActivity(intent)
+                            }
+                            .setPositiveButton("Следующее задание") { dialog, which ->
+                                val intent = Intent(this, Game::class.java)
+                                startActivity(intent)
+                            }.setView(starsXml)
+                            .show()
 
+                    } else {
+
+                        corrTxt.text = "Решение неверно!\nОжидание нового решения..."
+
+                    }
+                }
+
+                }
+
+            else if (bit == 1) {
+
+                val solutions = mutableListOf(1, 2, 4, 8, 16)
+                solutions.shuffle()
+
+                val row1sum = solutions[0] + solutions[1] + solutions[2] + solutions[3]
+                val row2sum = solutions[2] + solutions[3]
+                val row3sum = solutions[1] + solutions[2]
+                val col1sum = solutions[0] + solutions[2] + solutions[1]
+                val col2sum = solutions[1] + solutions[3] + solutions[2]
+
+
+                val row4sum = solutions[3] + solutions[0]
+                val col3sum = solutions[3] + solutions[2]
+
+                val row5sum = solutions[1] + solutions[0]
+                val col4sum = solutions[0] + solutions[3] + solutions[1] + solutions[2]
+
+                val row6sum = solutions[2] + solutions[3]
+                val col5sum = solutions[0] + solutions[3] + solutions[1] + solutions[2]
+
+                val row7sum = solutions[1] + solutions[3]
+                val col6sum = solutions[3] + solutions[0]
+
+                val row8sum = solutions[2] + solutions[0]
+
+
+                fun setValues(summ: Int, int10: TextView, int2: TextView) {
+                    int10.text = summ.toString().padStart(3, ' ')
+                    int2.text = summ.toString(2).padStart(5, '0')
+                }
+
+                setValues(row1sum, text_1_3__10, text_1_3__2)
+                setValues(row2sum, text_1_4__10, text_1_4__2)
+                setValues(row3sum, text_1_5__10, text_1_5__2)
+
+                setValues(row4sum, text_3_2__10_right, text_3_2__2_right)
+                setValues(row5sum, text_4_4__10, text_4_4__2)
+                setValues(row6sum, text_4_5__10, text_4_5__2)
+                setValues(row7sum, text_5_6__10, text_5_6__2)
+                setValues(row8sum, text_5_7__10, text_5_7__2)
+
+                setValues(col1sum, text_2_2__10, text_2_2__2)
+                setValues(col2sum, text_3_2__10_down, text_3_2__2_down)
+                setValues(col3sum, text_4_1__10, text_4_1__2)
+                setValues(col4sum, text_5_1__10, text_5_1__2)
+                setValues(col5sum, text_6_3__10, text_6_3__2)
+                setValues(col6sum, text_7_5__10, text_7_5__2)
+
+
+                checkBtn.setOnClickListener {
+                    val txt2_3 = text_2_3_edit.text.toString().toIntOrNull() ?: 0
+                    val txt2_4 = text_2_4_edit.text.toString().toIntOrNull() ?: 0
+                    val txt2_5 = text_2_5_edit.text.toString().toIntOrNull() ?: 0
+                    val txt3_3 = text_3_3_edit.text.toString().toIntOrNull() ?: 0
+                    val txt3_4 = text_3_4_edit.text.toString().toIntOrNull() ?: 0
+                    val txt3_5 = text_3_5_edit.text.toString().toIntOrNull() ?: 0
+                    val txt4_2 = text_4_2_edit.text.toString().toIntOrNull() ?: 0
+                    val txt4_3 = text_4_3_edit.text.toString().toIntOrNull() ?: 0
+                    val txt5_2 = text_5_2_edit.text.toString().toIntOrNull() ?: 0
+                    val txt5_3 = text_5_3_edit.text.toString().toIntOrNull() ?: 0
+                    val txt5_4 = text_5_4_edit.text.toString().toIntOrNull() ?: 0
+                    val txt5_5 = text_5_5_edit.text.toString().toIntOrNull() ?: 0
+                    val txt6_4 = text_6_4_edit.text.toString().toIntOrNull() ?: 0
+                    val txt6_5 = text_6_5_edit.text.toString().toIntOrNull() ?: 0
+                    val txt6_6 = text_6_6_edit.text.toString().toIntOrNull() ?: 0
+                    val txt6_7 = text_6_7_edit.text.toString().toIntOrNull() ?: 0
+                    val txt7_6 = text_7_6_edit.text.toString().toIntOrNull() ?: 0
+                    val txt7_7 = text_7_7_edit.text.toString().toIntOrNull() ?: 0
+
+
+                    if ((txt2_3 + txt2_4 + txt2_5 == col1sum.toString()
+                            .toIntOrNull()) && (txt3_3 + txt3_4 + txt3_5 == col2sum.toString()
+                            .toIntOrNull()) && (txt4_2 + txt4_3 == col3sum.toString()
+                            .toIntOrNull()) && (txt5_2 + txt5_3 + txt5_4 + txt5_5 == col4sum.toString()
+                            .toIntOrNull()) && (txt6_4 + txt6_5 + txt6_6 + txt6_7 == col5sum.toString()
+                            .toIntOrNull()) && (txt7_6 + txt7_7 == col6sum.toString()
+                            .toIntOrNull())
+                        &&
+                        (txt2_3 + txt3_3 + txt4_3 + txt5_3 == row1sum.toString()
+                            .toIntOrNull()) && (txt2_4 + txt3_4 == row2sum.toString()
+                            .toIntOrNull()) && (txt2_5 + txt3_5 == row3sum.toString()
+                            .toIntOrNull()) && (txt4_2 + txt5_2 == row4sum.toString()
+                            .toIntOrNull()) && (txt5_4 + txt6_4 == row5sum.toString()
+                            .toIntOrNull()) && (txt5_5 + txt6_5 == row6sum.toString()
+                            .toIntOrNull()) && (txt6_6 + txt7_6 == row7sum.toString()
+                            .toIntOrNull()) && (txt6_7 + txt7_7 == row8sum.toString().toIntOrNull())
+                    ) {
+
+                        val starsXml = layoutInflater.inflate(R.layout.three_star, null)
+                        MaterialAlertDialogBuilder(
+                            this,
+                            com.google.android.material.R.style.ThemeOverlay_Material3_MaterialAlertDialog_Centered
+                        )
+                            .setTitle("Решение верно!")
+                            .setNeutralButton("На главную") { dialog, which ->
+                                val intent = Intent(this, MainActivity::class.java)
+                                startActivity(intent)
+                            }
+                            .setPositiveButton("Следующее задание") { dialog, which ->
+                                val intent = Intent(this, Game::class.java)
+                                startActivity(intent)
+                            }.setView(starsXml)
+                            .show()
+
+                    } else {
+
+                        corrTxt.text = "Решение неверно!\nОжидание нового решения..."
+
+                    }
                 }
 
             }
