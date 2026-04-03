@@ -10,10 +10,10 @@
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/menuBtn"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:layout_marginTop="30dp"
-        android:layout_marginEnd="30dp"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="45dp"
+        android:layout_marginEnd="20dp"
         android:drawablePadding="0dp"
         android:focusable="true"
         android:paddingRight="15dp"
