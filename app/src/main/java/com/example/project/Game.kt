@@ -478,5 +478,13 @@ class Game : AppCompatActivity() {
             }
 
         }
+        else if (difficulty == 3) {
+
+            val inflater = LayoutInflater.from(this)
+            val newItem: View = inflater.inflate(R.layout.activity_4x4, gameLayout, false)
+            gameLayout.addView(newItem)
+
+        }
+
     }
 }
