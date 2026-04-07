@@ -732,12 +732,105 @@ class Game : AppCompatActivity() {
                 setValues(col22sum, text_8_8__10_down, text_8_8__2_down)
 
 
-                /*checkBtn.setOnClickListener {
+                checkBtn.setOnClickListener {
+                    val txt2_2 = text_2_2_edit.text.toString().toIntOrNull() ?: 0
                     val txt2_3 = text_2_3_edit.text.toString().toIntOrNull() ?: 0
+                    val txt2_4 = text_2_4_edit.text.toString().toIntOrNull() ?: 0
+                    val txt2_5 = text_2_5_edit.text.toString().toIntOrNull() ?: 0
+                    val txt3_2 = text_3_2_edit.text.toString().toIntOrNull() ?: 0
+                    val txt4_2 = text_4_2_edit.text.toString().toIntOrNull() ?: 0
+                    val txt4_3 = text_4_3_edit.text.toString().toIntOrNull() ?: 0
+                    val txt5_3 = text_5_3_edit.text.toString().toIntOrNull() ?: 0
+                    val txt5_4 = text_5_4_edit.text.toString().toIntOrNull() ?: 0
+                    val txt6_4 = text_6_4_edit.text.toString().toIntOrNull() ?: 0
+                    val txt7_4 = text_7_4_edit.text.toString().toIntOrNull() ?: 0
+                    val txt7_3 = text_7_3_edit.text.toString().toIntOrNull() ?: 0
+                    val txt8_3 = text_8_3_edit.text.toString().toIntOrNull() ?: 0
+                    val txt9_3 = text_9_3_edit.text.toString().toIntOrNull() ?: 0
+                    val txt10_3 = text_10_3_edit.text.toString().toIntOrNull() ?: 0
+                    val txt9_2 = text_9_2_edit.text.toString().toIntOrNull() ?: 0
+                    val txt10_2 = text_10_2_edit.text.toString().toIntOrNull() ?: 0
+                    val txt8_4 = text_8_4_edit.text.toString().toIntOrNull() ?: 0
+                    val txt3_4 = text_3_4_edit.text.toString().toIntOrNull() ?: 0
+                    val txt3_5 = text_3_5_edit.text.toString().toIntOrNull() ?: 0
+                    val txt4_5 = text_4_5_edit.text.toString().toIntOrNull() ?: 0
+                    val txt4_6 = text_4_6_edit.text.toString().toIntOrNull() ?: 0
+                    val txt5_6 = text_5_6_edit.text.toString().toIntOrNull() ?: 0
+                    val txt6_6 = text_6_6_edit.text.toString().toIntOrNull() ?: 0
+                    val txt6_5 = text_6_5_edit.text.toString().toIntOrNull() ?: 0
+                    val txt7_5 = text_7_5_edit.text.toString().toIntOrNull() ?: 0
+                    val txt10_4 = text_10_4_edit.text.toString().toIntOrNull() ?: 0
+                    val txt10_5 = text_10_5_edit.text.toString().toIntOrNull() ?: 0
+                    val txt9_5 = text_9_5_edit.text.toString().toIntOrNull() ?: 0
+                    val txt4_7 = text_4_7_edit.text.toString().toIntOrNull() ?: 0
+                    val txt3_7 = text_3_7_edit.text.toString().toIntOrNull() ?: 0
+                    val txt3_8 = text_3_8_edit.text.toString().toIntOrNull() ?: 0
+                    val txt2_8 = text_2_8_edit.text.toString().toIntOrNull() ?: 0
+                    val txt2_9 = text_2_9_edit.text.toString().toIntOrNull() ?: 0
+                    val txt3_9 = text_3_9_edit.text.toString().toIntOrNull() ?: 0
+                    val txt4_9 = text_4_9_edit.text.toString().toIntOrNull() ?: 0
+                    val txt4_10 = text_4_10_edit.text.toString().toIntOrNull() ?: 0
+                    val txt5_9 = text_5_9_edit.text.toString().toIntOrNull() ?: 0
+                    val txt5_10 = text_5_10_edit.text.toString().toIntOrNull() ?: 0
+                    val txt5_8 = text_5_8_edit.text.toString().toIntOrNull() ?: 0
+                    val txt6_8 = text_6_8_edit.text.toString().toIntOrNull() ?: 0
+                    val txt7_8 = text_7_8_edit.text.toString().toIntOrNull() ?: 0
+                    val txt7_9 = text_7_9_edit.text.toString().toIntOrNull() ?: 0
+                    val txt7_10 = text_7_10_edit.text.toString().toIntOrNull() ?: 0
+                    val txt8_10 = text_8_10_edit.text.toString().toIntOrNull() ?: 0
+                    val txt8_9 = text_8_9_edit.text.toString().toIntOrNull() ?: 0
+                    val txt9_9 = text_9_9_edit.text.toString().toIntOrNull() ?: 0
+                    val txt9_8 = text_9_8_edit.text.toString().toIntOrNull() ?: 0
+                    val txt9_7 = text_9_7_edit.text.toString().toIntOrNull() ?: 0
+                    val txt10_7 = text_10_7_edit.text.toString().toIntOrNull() ?: 0
+                    val txt10_8 = text_10_8_edit.text.toString().toIntOrNull() ?: 0
 
 
-                    if ((txt2_3 + txt2_4 + txt2_5 == col1sum.toString()
-                            .toIntOrNull()) && (txt3_3 + txt3_4 + txt3_5 == col2sum.toString()
+                    if ((txt2_2 + txt2_3 + txt2_4 + txt2_5 == col1sum.toString()
+                            .toIntOrNull()) && (txt3_2 == col2sum.toString()
+                            .toIntOrNull()) && (txt4_2 + txt4_3 == col3sum.toString()
+                            .toIntOrNull()) && (txt5_3 + txt5_4 == col4sum.toString()
+                            .toIntOrNull()) && (txt6_4 + txt6_5 + txt6_6 == col5sum.toString()
+                            .toIntOrNull()) && (txt7_3 + txt7_4 + txt7_5 == col6sum.toString()
+                            .toIntOrNull()) && (txt8_3 + txt8_4 == col7sum.toString()
+                            .toIntOrNull()) && (txt9_2 + txt9_3 == col8sum.toString()
+                            .toIntOrNull()) && (txt10_2 + txt10_3 + txt10_4 + txt10_5 == col9sum.toString()
+                            .toIntOrNull()) && (txt3_4 + txt3_5 == col10sum.toString()
+                            .toIntOrNull()) && (txt4_5 + txt4_6 + txt4_7 == col11sum.toString()
+                            .toIntOrNull()) && (txt5_6 == col12sum.toString()
+                            .toIntOrNull()) && (txt9_5 == col13sum.toString()
+                            .toIntOrNull()) && (txt3_7 + txt3_8 + txt3_9 == col14sum.toString()
+                            .toIntOrNull()) && (txt2_8 + txt2_9 == col15sum.toString()
+                            .toIntOrNull()) && (txt5_8 + txt5_9 + txt5_10 == col16sum.toString()
+                            .toIntOrNull()) && (txt6_8 == col17sum.toString()
+                            .toIntOrNull()) && (txt7_8 + txt7_9 + txt7_10 == col18sum.toString()
+                            .toIntOrNull()) && (txt9_7 + txt9_8 + txt9_9 == col19sum.toString()
+                            .toIntOrNull()) && (txt10_7 + txt10_8 == col20sum.toString()
+                            .toIntOrNull()) && (txt4_9 + txt4_10 == col21sum.toString()
+                            .toIntOrNull()) && (txt8_9 + txt8_10 == col22sum.toString()
+                            .toIntOrNull())
+                        &&
+                        (txt2_2 + txt3_2 + txt4_2 == row1sum.toString()
+                            .toIntOrNull()) && (txt2_3 == row2sum.toString()
+                            .toIntOrNull()) && (txt2_4 + txt3_4 == row3sum.toString()
+                            .toIntOrNull()) && (txt2_5 + txt3_5 + txt4_5 == row4sum.toString()
+                            .toIntOrNull()) && (txt4_6 + txt5_6 + txt6_6 == row5sum.toString()
+                            .toIntOrNull()) && (txt3_7 + txt4_7 == row6sum.toString()
+                            .toIntOrNull()) && (txt2_8 + txt3_8 == row7sum.toString()
+                            .toIntOrNull()) && (txt2_9 + txt3_9 + txt4_9 + txt5_9 == row8sum.toString()
+                            .toIntOrNull()) && (txt4_10 + txt5_10 == row9sum.toString()
+                            .toIntOrNull()) && (txt4_3 + txt5_3 == row10sum.toString()
+                            .toIntOrNull()) && (txt5_4 + txt6_4 + txt7_4 + txt8_4 == row11sum.toString()
+                            .toIntOrNull()) && (txt6_5 + txt7_5 == row12sum.toString()
+                            .toIntOrNull()) && (txt5_8 + txt6_8 + txt7_8 == row13sum.toString()
+                            .toIntOrNull()) && (txt7_3 + txt8_3 + txt9_3 + txt10_3 == row14sum.toString()
+                            .toIntOrNull()) && (txt7_9 + txt8_9 + txt9_9 == row15sum.toString()
+                            .toIntOrNull()) && (txt7_10 + txt8_10 == row16sum.toString()
+                            .toIntOrNull()) && (txt9_2 + txt10_2 == row17sum.toString()
+                            .toIntOrNull()) && (txt9_5 + txt10_5 == row18sum.toString()
+                            .toIntOrNull()) && (txt9_7 + txt10_7 == row19sum.toString()
+                            .toIntOrNull()) && (txt9_8 + txt10_8 == row20sum.toString()
+                            .toIntOrNull()) && (txt10_4 == row21sum.toString()
                             .toIntOrNull())
                     ) {
 
@@ -762,7 +855,7 @@ class Game : AppCompatActivity() {
                         corrTxt.text = "Решение неверно!\nОжидание нового решения..."
 
                     }
-                }*/
+                }
 
             }
 
