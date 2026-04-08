@@ -859,6 +859,237 @@ class Game : AppCompatActivity() {
 
             }
 
+            else if (bit == 1) {
+                val solutions = mutableListOf(1, 2, 4, 8, 16)
+                solutions.shuffle()
+
+                val row1sum = solutions[0] + solutions[1] + solutions[2]
+                val row2sum = solutions[2]
+                val row3sum = solutions[2] + solutions[3]
+                val row4sum = solutions[0] + solutions[1] + solutions[3]
+                val row5sum = solutions[0] + solutions[1] + solutions[2]
+                val row6sum = solutions[0] + solutions[3]
+                val row7sum = solutions[0] + solutions[2]
+                val row8sum = solutions[0] + solutions[1] + solutions[2] + solutions[3]
+                val row9sum = solutions[1] + solutions[2]
+                val row10sum = solutions[1] + solutions[3]
+                val row11sum = solutions[0] + solutions[1] + solutions[2] + solutions[3]
+                val row12sum = solutions[0] + solutions[3]
+                val row13sum = solutions[1] + solutions[2] + solutions[3]
+                val row14sum = solutions[0] + solutions[1] + solutions[2] + solutions[3]
+                val row15sum = solutions[0] + solutions[1] + solutions[3]
+                val row16sum = solutions[1] + solutions[2]
+                val row17sum = solutions[0] + solutions[1]
+                val row18sum = solutions[2] + solutions[3]
+                val row19sum = solutions[2] + solutions[3]
+                val row20sum = solutions[0] + solutions[1]
+                val row21sum = solutions[1]
+
+
+                val col1sum = solutions[0] + solutions[1] + solutions[2] + solutions[3]
+                val col2sum = solutions[1]
+                val col3sum = solutions[2] + solutions[3]
+                val col4sum = solutions[0] + solutions[1]
+                val col5sum = solutions[0] + solutions[1] + solutions[2]
+                val col6sum = solutions[0] + solutions[1] + solutions[3]
+                val col7sum = solutions[1] + solutions[3]
+                val col8sum = solutions[1] + solutions[2]
+                val col9sum = solutions[0] + solutions[1] + solutions[2] + solutions[3]
+                val col10sum = solutions[0] + solutions[2]
+                val col11sum = solutions[0] + solutions[2] + solutions[3]
+                val col12sum = solutions[0]
+                val col13sum = solutions[3]
+                val col14sum = solutions[0] + solutions[1] + solutions[3]
+                val col15sum = solutions[2] + solutions[3]
+                val col16sum = solutions[0] + solutions[2] + solutions[3]
+                val col17sum = solutions[1]
+                val col18sum = solutions[0] + solutions[1] + solutions[2]
+                val col19sum = solutions[0] + solutions[1] + solutions[3]
+                val col20sum = solutions[1] + solutions[2]
+                val col21sum = solutions[1] + solutions[2]
+                val col22sum = solutions[2] + solutions[3]
+
+
+
+                fun setValues(summ: Int, int10: TextView, int2: TextView) {
+                    int10.text = summ.toString().padStart(3, ' ')
+                    int2.text = summ.toString(2).padStart(5, '0')
+                }
+
+                setValues(row1sum, text_1_2__10, text_1_2__2)
+                setValues(row2sum, text_1_3__10, text_1_3__2)
+                setValues(row3sum, text_1_4__10, text_1_4__2)
+                setValues(row4sum, text_1_5__10, text_1_5__2)
+                setValues(row5sum, text_3_6__10_right, text_3_6__2_right)
+                setValues(row6sum, text_2_7__10_right, text_2_7__2_right)
+                setValues(row7sum, text_1_8__10, text_1_8__2)
+                setValues(row8sum, text_1_9__10, text_1_9__2)
+                setValues(row9sum, text_3_10__10, text_3_10__2)
+                setValues(row10sum, text_3_3__10_right, text_3_3__2_right)
+                setValues(row11sum, text_4_4__10_right, text_4_4__2_right)
+                setValues(row12sum, text_5_5__10_right, text_5_5__2_right)
+                setValues(row13sum, text_4_8__10_right, text_4_8__2_right)
+                setValues(row14sum, text_6_3__10_right, text_6_3__2_right)
+                setValues(row15sum, text_6_9__10, text_6_9__2)
+                setValues(row16sum, text_6_10__10, text_6_10__2)
+                setValues(row17sum, text_8_2__10_right, text_8_2__2_right)
+                setValues(row18sum, text_8_5__10, text_8_5__2)
+                setValues(row19sum, text_8_7__10, text_8_7__2)
+                setValues(row20sum, text_8_8__10_right, text_8_8__2_right)
+                setValues(row21sum, text_9_4__10_right, text_9_4__2_right)
+
+
+                setValues(col1sum, text_2_1__10, text_2_1__2)
+                setValues(col2sum, text_3_1__10, text_3_1__2)
+                setValues(col3sum, text_4_1__10, text_4_1__2)
+                setValues(col4sum, text_5_2__10, text_5_2__2)
+                setValues(col5sum, text_6_3__10_down, text_6_3__2_down)
+                setValues(col6sum, text_7_2__10, text_7_2__2)
+                setValues(col7sum, text_8_2__10_down, text_8_2__2_down)
+                setValues(col8sum, text_9_1__10, text_9_1__2)
+                setValues(col9sum, text_10_1__10, text_10_1__2)
+                setValues(col10sum, text_3_3__10_down, text_3_3__2_down)
+                setValues(col11sum, text_4_4__10_down, text_4_4__2_down)
+                setValues(col12sum, text_5_5__10_down, text_5_5__2_down)
+                setValues(col13sum, text_9_4__10_down, text_9_4__2_down)
+                setValues(col14sum, text_3_6__10_down, text_3_6__2_down)
+                setValues(col15sum, text_2_7__10_down, text_2_7__2_down)
+                setValues(col16sum, text_5_7__10, text_5_7__2)
+                setValues(col17sum, text_6_7__10, text_6_7__2)
+                setValues(col18sum, text_7_7__10, text_7_7__2)
+                setValues(col19sum, text_9_6__10, text_9_6__2)
+                setValues(col20sum, text_10_6__10, text_10_6__2)
+                setValues(col21sum, text_4_8__10_down, text_4_8__2_down)
+                setValues(col22sum, text_8_8__10_down, text_8_8__2_down)
+
+
+                checkBtn.setOnClickListener {
+                    val txt2_2 = text_2_2_edit.text.toString().toIntOrNull() ?: 0
+                    val txt2_3 = text_2_3_edit.text.toString().toIntOrNull() ?: 0
+                    val txt2_4 = text_2_4_edit.text.toString().toIntOrNull() ?: 0
+                    val txt2_5 = text_2_5_edit.text.toString().toIntOrNull() ?: 0
+                    val txt3_2 = text_3_2_edit.text.toString().toIntOrNull() ?: 0
+                    val txt4_2 = text_4_2_edit.text.toString().toIntOrNull() ?: 0
+                    val txt4_3 = text_4_3_edit.text.toString().toIntOrNull() ?: 0
+                    val txt5_3 = text_5_3_edit.text.toString().toIntOrNull() ?: 0
+                    val txt5_4 = text_5_4_edit.text.toString().toIntOrNull() ?: 0
+                    val txt6_4 = text_6_4_edit.text.toString().toIntOrNull() ?: 0
+                    val txt7_4 = text_7_4_edit.text.toString().toIntOrNull() ?: 0
+                    val txt7_3 = text_7_3_edit.text.toString().toIntOrNull() ?: 0
+                    val txt8_3 = text_8_3_edit.text.toString().toIntOrNull() ?: 0
+                    val txt9_3 = text_9_3_edit.text.toString().toIntOrNull() ?: 0
+                    val txt10_3 = text_10_3_edit.text.toString().toIntOrNull() ?: 0
+                    val txt9_2 = text_9_2_edit.text.toString().toIntOrNull() ?: 0
+                    val txt10_2 = text_10_2_edit.text.toString().toIntOrNull() ?: 0
+                    val txt8_4 = text_8_4_edit.text.toString().toIntOrNull() ?: 0
+                    val txt3_4 = text_3_4_edit.text.toString().toIntOrNull() ?: 0
+                    val txt3_5 = text_3_5_edit.text.toString().toIntOrNull() ?: 0
+                    val txt4_5 = text_4_5_edit.text.toString().toIntOrNull() ?: 0
+                    val txt4_6 = text_4_6_edit.text.toString().toIntOrNull() ?: 0
+                    val txt5_6 = text_5_6_edit.text.toString().toIntOrNull() ?: 0
+                    val txt6_6 = text_6_6_edit.text.toString().toIntOrNull() ?: 0
+                    val txt6_5 = text_6_5_edit.text.toString().toIntOrNull() ?: 0
+                    val txt7_5 = text_7_5_edit.text.toString().toIntOrNull() ?: 0
+                    val txt10_4 = text_10_4_edit.text.toString().toIntOrNull() ?: 0
+                    val txt10_5 = text_10_5_edit.text.toString().toIntOrNull() ?: 0
+                    val txt9_5 = text_9_5_edit.text.toString().toIntOrNull() ?: 0
+                    val txt4_7 = text_4_7_edit.text.toString().toIntOrNull() ?: 0
+                    val txt3_7 = text_3_7_edit.text.toString().toIntOrNull() ?: 0
+                    val txt3_8 = text_3_8_edit.text.toString().toIntOrNull() ?: 0
+                    val txt2_8 = text_2_8_edit.text.toString().toIntOrNull() ?: 0
+                    val txt2_9 = text_2_9_edit.text.toString().toIntOrNull() ?: 0
+                    val txt3_9 = text_3_9_edit.text.toString().toIntOrNull() ?: 0
+                    val txt4_9 = text_4_9_edit.text.toString().toIntOrNull() ?: 0
+                    val txt4_10 = text_4_10_edit.text.toString().toIntOrNull() ?: 0
+                    val txt5_9 = text_5_9_edit.text.toString().toIntOrNull() ?: 0
+                    val txt5_10 = text_5_10_edit.text.toString().toIntOrNull() ?: 0
+                    val txt5_8 = text_5_8_edit.text.toString().toIntOrNull() ?: 0
+                    val txt6_8 = text_6_8_edit.text.toString().toIntOrNull() ?: 0
+                    val txt7_8 = text_7_8_edit.text.toString().toIntOrNull() ?: 0
+                    val txt7_9 = text_7_9_edit.text.toString().toIntOrNull() ?: 0
+                    val txt7_10 = text_7_10_edit.text.toString().toIntOrNull() ?: 0
+                    val txt8_10 = text_8_10_edit.text.toString().toIntOrNull() ?: 0
+                    val txt8_9 = text_8_9_edit.text.toString().toIntOrNull() ?: 0
+                    val txt9_9 = text_9_9_edit.text.toString().toIntOrNull() ?: 0
+                    val txt9_8 = text_9_8_edit.text.toString().toIntOrNull() ?: 0
+                    val txt9_7 = text_9_7_edit.text.toString().toIntOrNull() ?: 0
+                    val txt10_7 = text_10_7_edit.text.toString().toIntOrNull() ?: 0
+                    val txt10_8 = text_10_8_edit.text.toString().toIntOrNull() ?: 0
+
+
+                    if ((txt2_2 + txt2_3 + txt2_4 + txt2_5 == col1sum.toString()
+                            .toIntOrNull()) && (txt3_2 == col2sum.toString()
+                            .toIntOrNull()) && (txt4_2 + txt4_3 == col3sum.toString()
+                            .toIntOrNull()) && (txt5_3 + txt5_4 == col4sum.toString()
+                            .toIntOrNull()) && (txt6_4 + txt6_5 + txt6_6 == col5sum.toString()
+                            .toIntOrNull()) && (txt7_3 + txt7_4 + txt7_5 == col6sum.toString()
+                            .toIntOrNull()) && (txt8_3 + txt8_4 == col7sum.toString()
+                            .toIntOrNull()) && (txt9_2 + txt9_3 == col8sum.toString()
+                            .toIntOrNull()) && (txt10_2 + txt10_3 + txt10_4 + txt10_5 == col9sum.toString()
+                            .toIntOrNull()) && (txt3_4 + txt3_5 == col10sum.toString()
+                            .toIntOrNull()) && (txt4_5 + txt4_6 + txt4_7 == col11sum.toString()
+                            .toIntOrNull()) && (txt5_6 == col12sum.toString()
+                            .toIntOrNull()) && (txt9_5 == col13sum.toString()
+                            .toIntOrNull()) && (txt3_7 + txt3_8 + txt3_9 == col14sum.toString()
+                            .toIntOrNull()) && (txt2_8 + txt2_9 == col15sum.toString()
+                            .toIntOrNull()) && (txt5_8 + txt5_9 + txt5_10 == col16sum.toString()
+                            .toIntOrNull()) && (txt6_8 == col17sum.toString()
+                            .toIntOrNull()) && (txt7_8 + txt7_9 + txt7_10 == col18sum.toString()
+                            .toIntOrNull()) && (txt9_7 + txt9_8 + txt9_9 == col19sum.toString()
+                            .toIntOrNull()) && (txt10_7 + txt10_8 == col20sum.toString()
+                            .toIntOrNull()) && (txt4_9 + txt4_10 == col21sum.toString()
+                            .toIntOrNull()) && (txt8_9 + txt8_10 == col22sum.toString()
+                            .toIntOrNull())
+                        &&
+                        (txt2_2 + txt3_2 + txt4_2 == row1sum.toString()
+                            .toIntOrNull()) && (txt2_3 == row2sum.toString()
+                            .toIntOrNull()) && (txt2_4 + txt3_4 == row3sum.toString()
+                            .toIntOrNull()) && (txt2_5 + txt3_5 + txt4_5 == row4sum.toString()
+                            .toIntOrNull()) && (txt4_6 + txt5_6 + txt6_6 == row5sum.toString()
+                            .toIntOrNull()) && (txt3_7 + txt4_7 == row6sum.toString()
+                            .toIntOrNull()) && (txt2_8 + txt3_8 == row7sum.toString()
+                            .toIntOrNull()) && (txt2_9 + txt3_9 + txt4_9 + txt5_9 == row8sum.toString()
+                            .toIntOrNull()) && (txt4_10 + txt5_10 == row9sum.toString()
+                            .toIntOrNull()) && (txt4_3 + txt5_3 == row10sum.toString()
+                            .toIntOrNull()) && (txt5_4 + txt6_4 + txt7_4 + txt8_4 == row11sum.toString()
+                            .toIntOrNull()) && (txt6_5 + txt7_5 == row12sum.toString()
+                            .toIntOrNull()) && (txt5_8 + txt6_8 + txt7_8 == row13sum.toString()
+                            .toIntOrNull()) && (txt7_3 + txt8_3 + txt9_3 + txt10_3 == row14sum.toString()
+                            .toIntOrNull()) && (txt7_9 + txt8_9 + txt9_9 == row15sum.toString()
+                            .toIntOrNull()) && (txt7_10 + txt8_10 == row16sum.toString()
+                            .toIntOrNull()) && (txt9_2 + txt10_2 == row17sum.toString()
+                            .toIntOrNull()) && (txt9_5 + txt10_5 == row18sum.toString()
+                            .toIntOrNull()) && (txt9_7 + txt10_7 == row19sum.toString()
+                            .toIntOrNull()) && (txt9_8 + txt10_8 == row20sum.toString()
+                            .toIntOrNull()) && (txt10_4 == row21sum.toString()
+                            .toIntOrNull())
+                    ) {
+
+                        val starsXml = layoutInflater.inflate(R.layout.three_star, null)
+                        MaterialAlertDialogBuilder(
+                            this,
+                            com.google.android.material.R.style.ThemeOverlay_Material3_MaterialAlertDialog_Centered
+                        )
+                            .setTitle("Решение верно!")
+                            .setNeutralButton("На главную") { dialog, which ->
+                                val intent = Intent(this, MainActivity::class.java)
+                                startActivity(intent)
+                            }
+                            .setPositiveButton("Следующее задание") { dialog, which ->
+                                val intent = Intent(this, Game::class.java)
+                                startActivity(intent)
+                            }.setView(starsXml)
+                            .show()
+
+                    } else {
+
+                        corrTxt.text = "Решение неверно!\nОжидание нового решения..."
+
+                    }
+                }
+
+            }
+
 
 
         }
