@@ -7,7 +7,7 @@
     android:layout_height="match_parent">
 
     <com.google.android.material.button.MaterialButton
-        android:id="@+id/backBtn2"
+        android:id="@+id/backBtn"
         android:layout_width="70dp"
         android:layout_height="70dp"
         android:layout_marginStart="20dp"
@@ -16,11 +16,12 @@
         android:focusable="true"
         android:paddingRight="15dp"
         android:text="Button"
+        android:textColor="#00FFFFFF"
         app:backgroundTint="#00DEA6A6"
         app:icon="@drawable/arrow_back_24dp_1f1f1f_fill0_wght400_grad0_opsz24"
         app:iconGravity="textStart"
         app:iconPadding="0dp"
-        app:iconTint="#000000"
+        app:iconTint="@color/Black"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 

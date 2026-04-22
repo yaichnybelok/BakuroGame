@@ -17,12 +17,18 @@ import kotlin.random.Random
 
 class Game : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
-        AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO)
+        val sharedPref = getSharedPreferences("data", Context.MODE_PRIVATE)
+        val themecolor = sharedPref.getInt("THEME", 0)
+
+        val targetMode =
+            if (themecolor == 1) AppCompatDelegate.MODE_NIGHT_YES else AppCompatDelegate.MODE_NIGHT_NO
+        if (AppCompatDelegate.getDefaultNightMode() != targetMode) {
+            AppCompatDelegate.setDefaultNightMode(targetMode)
+        }
+
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_game)
 
-
-        val sharedPref = getSharedPreferences("data", Context.MODE_PRIVATE)
         val corrTxt = findViewById<TextView>(R.id.corrTxt)
         val text = findViewById<TextView>(R.id.textView)
         val gameLayout = findViewById<LinearLayout>(R.id.gameLayout)
@@ -39,10 +45,7 @@ class Game : AppCompatActivity() {
         text.text = "Сложность: $curr_difficulty\nРазрядность: $curr_bit"
 
         backBtn.setOnClickListener {
-
-            val intent = Intent(this, MainActivity::class.java)
-            startActivity(intent)
-
+            finish()
         }
 
         resetBtn.setOnClickListener {

@@ -6,9 +6,10 @@ import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.app.AppCompatDelegate
 import com.google.android.material.button.MaterialButton
+import com.google.android.material.materialswitch.MaterialSwitch
+import androidx.core.content.edit
 
-
-class Guide : AppCompatActivity() {
+class Settings : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         val sharedPref = getSharedPreferences("data", Context.MODE_PRIVATE)
         val themecolor = sharedPref.getInt("THEME", 0)
@@ -18,21 +19,30 @@ class Guide : AppCompatActivity() {
         if (AppCompatDelegate.getDefaultNightMode() != targetMode) {
             AppCompatDelegate.setDefaultNightMode(targetMode)
         }
+
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_guide)
-        val pdfView = findViewById<com.github.barteksc.pdfviewer.PDFView>(R.id.pdfView)
+        setContentView(R.layout.activity_settings)
         val backBtn = findViewById<MaterialButton>(R.id.backBtn)
+        val darkThemeSw = findViewById<MaterialSwitch>(R.id.darkThemeSw)
 
         backBtn.setOnClickListener {
             finish()
         }
 
-        pdfView.fromAsset("guide2.pdf")
-            .enableSwipe(true)
-            .swipeHorizontal(false)
-            .enableDoubletap(true)
-            .defaultPage(0)
-            .load()
+        darkThemeSw.setOnCheckedChangeListener(null)
+        darkThemeSw.isChecked = (themecolor == 1)
+
+        darkThemeSw.setOnCheckedChangeListener { _, isChecked ->
+            val newTheme = if (isChecked) 1 else 0
+
+            sharedPref.edit {
+                putInt("THEME", newTheme)
+            }
+
+            val mode = if (isChecked) AppCompatDelegate.MODE_NIGHT_YES else AppCompatDelegate.MODE_NIGHT_NO
+            AppCompatDelegate.setDefaultNightMode(mode)
+
+        }
 
 
     }

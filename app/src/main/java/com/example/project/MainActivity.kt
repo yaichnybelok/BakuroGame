@@ -16,15 +16,21 @@ import com.google.android.material.dialog.MaterialAlertDialogBuilder
 class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
-        AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO)
+
+        val sharedPref = getSharedPreferences("data", Context.MODE_PRIVATE)
+        val themecolor = sharedPref.getInt("THEME", 0)
+
+        val targetMode =
+            if (themecolor == 1) AppCompatDelegate.MODE_NIGHT_YES else AppCompatDelegate.MODE_NIGHT_NO
+        if (AppCompatDelegate.getDefaultNightMode() != targetMode) {
+            AppCompatDelegate.setDefaultNightMode(targetMode)
+        }
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        val sharedPref = getSharedPreferences("data", Context.MODE_PRIVATE)
         val playBtn = findViewById<MaterialButton>(R.id.playBtn)
         val difficultyBtn = findViewById<MaterialButton>(R.id.difficultyBtn)
         val menuBtn: View = findViewById(R.id.menuBtn)
-
 
         with(sharedPref.edit()) {
             putInt("DIFFICULTY", 0)
@@ -46,6 +52,16 @@ class MainActivity : AppCompatActivity() {
                         startActivity(intent)
                         true
                     }
+
+                    else -> false
+                }
+                when (item.itemId) {
+                    R.id.settings -> {
+                        val intent = Intent(this, Settings::class.java)
+                        startActivity(intent)
+                        true
+                    }
+
                     else -> false
                 }
             }
