@@ -19,6 +19,7 @@ class Game : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         val sharedPref = getSharedPreferences("data", Context.MODE_PRIVATE)
         val themecolor = sharedPref.getInt("THEME", 0)
+        val hardmode = sharedPref.getInt("HARDMODE", 0)
 
         val targetMode =
             if (themecolor == 1) AppCompatDelegate.MODE_NIGHT_YES else AppCompatDelegate.MODE_NIGHT_NO
@@ -45,7 +46,8 @@ class Game : AppCompatActivity() {
         text.text = "Сложность: $curr_difficulty\nРазрядность: $curr_bit"
 
         backBtn.setOnClickListener {
-            finish()
+            val intent = Intent(this, MainActivity::class.java)
+            startActivity(intent)
         }
 
         resetBtn.setOnClickListener {
@@ -78,8 +80,15 @@ class Game : AppCompatActivity() {
 
             if (bit == 0) {
 
-                val solutions = mutableListOf(1, 2, 4, 8)
-                solutions.shuffle()
+                var solutions = mutableListOf(1, 2, 4, 8)
+
+                if (hardmode == 0) {
+                    solutions.shuffle()
+                }
+                else if (hardmode == 1) {
+                    solutions = mutableListOf(solutions.random(), solutions.random(), solutions.random(), solutions.random())
+                }
+
 
                 val row1sum = solutions[0] + solutions[1]
                 val row2sum = solutions[2] + solutions[3]
@@ -129,8 +138,14 @@ class Game : AppCompatActivity() {
             }
             else if (bit == 1) {
 
-                val solutions = mutableListOf(1, 2, 4, 8, 16)
-                solutions.shuffle()
+                var solutions = mutableListOf(1, 2, 4, 8)
+
+                if (hardmode == 0) {
+                    solutions.shuffle()
+                }
+                else if (hardmode == 1) {
+                    solutions = mutableListOf(solutions.random(), solutions.random(), solutions.random(), solutions.random(), solutions.random())
+                }
 
                 val fst = solutions[Random.nextInt(solutions.size)]
                 solutions.remove(fst)
@@ -254,8 +269,14 @@ class Game : AppCompatActivity() {
 
 
             if (bit == 0) {
-                val solutions = mutableListOf(1, 2, 4, 8)
-                solutions.shuffle()
+                var solutions = mutableListOf(1, 2, 4, 8)
+
+                if (hardmode == 0) {
+                    solutions.shuffle()
+                }
+                else if (hardmode == 1) {
+                    solutions = mutableListOf(solutions.random(), solutions.random(), solutions.random(), solutions.random())
+                }
 
                 val row1sum = solutions[0] + solutions[1] + solutions[2] + solutions[3]
                 val row2sum = solutions[2] + solutions[3]
@@ -368,8 +389,14 @@ class Game : AppCompatActivity() {
 
             else if (bit == 1) {
 
-                val solutions = mutableListOf(1, 2, 4, 8, 16)
-                solutions.shuffle()
+                var solutions = mutableListOf(1, 2, 4, 8)
+
+                if (hardmode == 0) {
+                    solutions.shuffle()
+                }
+                else if (hardmode == 1) {
+                    solutions = mutableListOf(solutions.random(), solutions.random(), solutions.random(), solutions.random(), solutions.random())
+                }
 
                 val row1sum = solutions[0] + solutions[1] + solutions[2] + solutions[3]
                 val row2sum = solutions[2] + solutions[3]
@@ -632,8 +659,14 @@ class Game : AppCompatActivity() {
 
 
             if (bit == 0) {
-                val solutions = mutableListOf(1, 2, 4, 8)
-                solutions.shuffle()
+                var solutions = mutableListOf(1, 2, 4, 8)
+
+                if (hardmode == 0) {
+                    solutions.shuffle()
+                }
+                else if (hardmode == 1) {
+                    solutions = mutableListOf(solutions.random(), solutions.random(), solutions.random(), solutions.random())
+                }
 
                 val row1sum = solutions[0] + solutions[1] + solutions[2]
                 val row2sum = solutions[2]
@@ -863,8 +896,14 @@ class Game : AppCompatActivity() {
             }
 
             else if (bit == 1) {
-                val solutions = mutableListOf(1, 2, 4, 8, 16)
-                solutions.shuffle()
+                var solutions = mutableListOf(1, 2, 4, 8)
+
+                if (hardmode == 0) {
+                    solutions.shuffle()
+                }
+                else if (hardmode == 1) {
+                    solutions = mutableListOf(solutions.random(), solutions.random(), solutions.random(), solutions.random(), solutions.random())
+                }
 
                 val row1sum = solutions[0] + solutions[1] + solutions[2]
                 val row2sum = solutions[2]

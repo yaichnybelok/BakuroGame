@@ -59,6 +59,14 @@
                 android:layout_height="wrap_content"
                 android:text="Включить тёмную тему"
                 android:textSize="20sp" />
+
+            <com.google.android.material.materialswitch.MaterialSwitch
+                android:id="@+id/hardModeSw"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="Включить повтор чисел"
+                android:textSize="20sp" />
         </LinearLayout>
     </ScrollView>
 </androidx.constraintlayout.widget.ConstraintLayout>

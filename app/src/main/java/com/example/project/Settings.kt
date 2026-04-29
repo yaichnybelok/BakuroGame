@@ -13,6 +13,7 @@ class Settings : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         val sharedPref = getSharedPreferences("data", Context.MODE_PRIVATE)
         val themecolor = sharedPref.getInt("THEME", 0)
+        val hardmode = sharedPref.getInt("HARDMODE", 0)
 
         val targetMode =
             if (themecolor == 1) AppCompatDelegate.MODE_NIGHT_YES else AppCompatDelegate.MODE_NIGHT_NO
@@ -24,6 +25,7 @@ class Settings : AppCompatActivity() {
         setContentView(R.layout.activity_settings)
         val backBtn = findViewById<MaterialButton>(R.id.backBtn)
         val darkThemeSw = findViewById<MaterialSwitch>(R.id.darkThemeSw)
+        val hardModeSw = findViewById<MaterialSwitch>(R.id.hardModeSw)
 
         backBtn.setOnClickListener {
             finish()
@@ -34,7 +36,6 @@ class Settings : AppCompatActivity() {
 
         darkThemeSw.setOnCheckedChangeListener { _, isChecked ->
             val newTheme = if (isChecked) 1 else 0
-
             sharedPref.edit {
                 putInt("THEME", newTheme)
             }
@@ -42,6 +43,14 @@ class Settings : AppCompatActivity() {
             val mode = if (isChecked) AppCompatDelegate.MODE_NIGHT_YES else AppCompatDelegate.MODE_NIGHT_NO
             AppCompatDelegate.setDefaultNightMode(mode)
 
+        }
+
+        hardModeSw.isChecked = (hardmode == 1)
+        hardModeSw.setOnCheckedChangeListener { _, isChecked ->
+            val newMode = if (isChecked) 1 else 0
+            sharedPref.edit {
+                putInt("HARDMODE", newMode)
+            }
         }
 
 
