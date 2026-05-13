@@ -388,7 +388,7 @@
         android:layout_height="1dp"
         android:layout_marginStart="101dp"
         android:layout_marginTop="84dp"
-        android:background="#000000"
+        android:background="@color/PureBlack"
         android:rotation="45"
         app:layout_constraintStart_toEndOf="@+id/divider2"
         app:layout_constraintTop_toTopOf="parent" />
@@ -524,7 +524,7 @@
         android:layout_height="1dp"
         android:layout_marginStart="-15dp"
         android:layout_marginTop="198dp"
-        android:background="#000000"
+        android:background="@color/PureBlack"
         android:rotation="45"
         app:layout_constraintStart_toEndOf="@+id/divider2"
         app:layout_constraintTop_toTopOf="parent" />
@@ -556,7 +556,7 @@
         android:layout_height="1dp"
         android:layout_marginStart="101dp"
         android:layout_marginTop="84dp"
-        android:background="#000000"
+        android:background="@color/PureBlack"
         android:rotation="45"
         app:layout_constraintStart_toEndOf="@+id/divider2"
         app:layout_constraintTop_toTopOf="parent" />
@@ -567,7 +567,7 @@
         android:layout_height="1dp"
         android:layout_marginStart="44dp"
         android:layout_marginTop="84dp"
-        android:background="#000000"
+        android:background="@color/PureBlack"
         android:rotation="45"
         app:layout_constraintStart_toEndOf="@+id/divider2"
         app:layout_constraintTop_toTopOf="parent" />
@@ -578,7 +578,7 @@
         android:layout_height="1dp"
         android:layout_marginStart="330dp"
         android:layout_marginTop="255dp"
-        android:background="#000000"
+        android:background="@color/PureBlack"
         android:rotation="45"
         app:layout_constraintStart_toEndOf="@+id/divider2"
         app:layout_constraintTop_toTopOf="parent" />
@@ -589,7 +589,7 @@
         android:layout_height="1dp"
         android:layout_marginStart="330dp"
         android:layout_marginTop="84dp"
-        android:background="#000000"
+        android:background="@color/PureBlack"
         android:rotation="45"
         app:layout_constraintStart_toEndOf="@+id/divider2"
         app:layout_constraintTop_toTopOf="parent" />
@@ -600,7 +600,7 @@
         android:layout_height="1dp"
         android:layout_marginStart="330dp"
         android:layout_marginTop="142dp"
-        android:background="#000000"
+        android:background="@color/PureBlack"
         android:rotation="45"
         app:layout_constraintStart_toEndOf="@+id/divider2"
         app:layout_constraintTop_toTopOf="parent" />
@@ -611,7 +611,7 @@
         android:layout_height="1dp"
         android:layout_marginStart="330dp"
         android:layout_marginTop="198dp"
-        android:background="#000000"
+        android:background="@color/PureBlack"
         android:rotation="45"
         app:layout_constraintStart_toEndOf="@+id/divider2"
         app:layout_constraintTop_toTopOf="parent" />
@@ -622,7 +622,7 @@
         android:layout_height="1dp"
         android:layout_marginStart="272dp"
         android:layout_marginTop="142dp"
-        android:background="#000000"
+        android:background="@color/PureBlack"
         android:rotation="45"
         app:layout_constraintStart_toEndOf="@+id/divider2"
         app:layout_constraintTop_toTopOf="parent" />
@@ -633,7 +633,7 @@
         android:layout_height="1dp"
         android:layout_marginStart="272dp"
         android:layout_marginTop="84dp"
-        android:background="#000000"
+        android:background="@color/PureBlack"
         android:rotation="45"
         app:layout_constraintStart_toEndOf="@+id/divider2"
         app:layout_constraintTop_toTopOf="parent" />
@@ -644,7 +644,7 @@
         android:layout_height="1dp"
         android:layout_marginStart="158dp"
         android:layout_marginTop="199dp"
-        android:background="#000000"
+        android:background="@color/PureBlack"
         android:rotation="45"
         app:layout_constraintStart_toEndOf="@+id/divider2"
         app:layout_constraintTop_toTopOf="parent" />
@@ -655,7 +655,7 @@
         android:layout_height="1dp"
         android:layout_marginStart="45dp"
         android:layout_marginTop="373dp"
-        android:background="#000000"
+        android:background="@color/PureBlack"
         android:rotation="45"
         app:layout_constraintStart_toEndOf="@+id/divider2"
         app:layout_constraintTop_toTopOf="parent" />
@@ -666,7 +666,7 @@
         android:layout_height="1dp"
         android:layout_marginStart="159dp"
         android:layout_marginTop="373dp"
-        android:background="#000000"
+        android:background="@color/PureBlack"
         android:rotation="45"
         app:layout_constraintStart_toEndOf="@+id/divider2"
         app:layout_constraintTop_toTopOf="parent" />
@@ -676,7 +676,7 @@
         android:layout_width="1dp"
         android:layout_height="400dp"
         android:layout_marginStart="343dp"
-        android:background="#020202"
+        android:background="@color/PureBlack"
         app:layout_constraintBottom_toTopOf="@+id/divider6"
         app:layout_constraintStart_toStartOf="@+id/divider2" />
 
@@ -685,7 +685,7 @@
         android:layout_width="1dp"
         android:layout_height="400dp"
         android:layout_marginStart="285dp"
-        android:background="#020202"
+        android:background="@color/PureBlack"
         app:layout_constraintBottom_toTopOf="@+id/divider6"
         app:layout_constraintStart_toStartOf="@+id/divider2" />
 
@@ -694,7 +694,7 @@
         android:layout_width="400dp"
         android:layout_height="1dp"
         android:layout_marginTop="343dp"
-        android:background="#000000"
+        android:background="@color/PureBlack"
         app:layout_constraintStart_toEndOf="@+id/divider2"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -703,7 +703,7 @@
         android:layout_width="400dp"
         android:layout_height="1dp"
         android:layout_marginTop="285dp"
-        android:background="#000000"
+        android:background="@color/PureBlack"
         app:layout_constraintStart_toEndOf="@+id/divider2"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -712,7 +712,7 @@
         android:layout_width="400dp"
         android:layout_height="1dp"
         android:layout_marginTop="228dp"
-        android:background="#000000"
+        android:background="@color/PureBlack"
         app:layout_constraintStart_toEndOf="@+id/divider2"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -721,7 +721,7 @@
         android:layout_width="400dp"
         android:layout_height="1dp"
         android:layout_marginTop="171dp"
-        android:background="#000000"
+        android:background="@color/PureBlack"
         app:layout_constraintStart_toEndOf="@+id/divider2"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -730,7 +730,7 @@
         android:layout_width="400dp"
         android:layout_height="1dp"
         android:layout_marginTop="114dp"
-        android:background="#000000"
+        android:background="@color/PureBlack"
         app:layout_constraintStart_toEndOf="@+id/divider2"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -738,7 +738,7 @@
         android:id="@+id/divider"
         android:layout_width="400dp"
         android:layout_height="1dp"
-        android:background="#000000"
+        android:background="@color/PureBlack"
         app:layout_constraintStart_toEndOf="@+id/divider2"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -747,7 +747,7 @@
         android:layout_width="400dp"
         android:layout_height="1dp"
         android:layout_marginTop="400dp"
-        android:background="#000000"
+        android:background="@color/PureBlack"
         app:layout_constraintStart_toEndOf="@+id/divider2"
         app:layout_constraintTop_toBottomOf="@+id/divider" />
 
@@ -756,7 +756,7 @@
         android:layout_width="400dp"
         android:layout_height="1dp"
         android:layout_marginTop="57dp"
-        android:background="#000000"
+        android:background="@color/PureBlack"
         app:layout_constraintStart_toEndOf="@+id/divider2"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -764,7 +764,7 @@
         android:id="@+id/divider2"
         android:layout_width="1dp"
         android:layout_height="400dp"
-        android:background="#000000"
+        android:background="@color/PureBlack"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/divider" />
 
@@ -773,7 +773,7 @@
         android:layout_width="1dp"
         android:layout_height="400dp"
         android:layout_marginStart="400dp"
-        android:background="#020202"
+        android:background="@color/PureBlack"
         app:layout_constraintBottom_toTopOf="@+id/divider6"
         app:layout_constraintStart_toStartOf="@+id/divider2" />
 
@@ -782,7 +782,7 @@
         android:layout_width="1dp"
         android:layout_height="400dp"
         android:layout_marginStart="57dp"
-        android:background="#020202"
+        android:background="@color/PureBlack"
         app:layout_constraintBottom_toTopOf="@+id/divider6"
         app:layout_constraintStart_toStartOf="@+id/divider2" />
 
@@ -791,7 +791,7 @@
         android:layout_width="1dp"
         android:layout_height="400dp"
         android:layout_marginStart="114dp"
-        android:background="#020202"
+        android:background="@color/PureBlack"
         app:layout_constraintBottom_toTopOf="@+id/divider6"
         app:layout_constraintStart_toStartOf="@+id/divider2" />
 
@@ -800,7 +800,7 @@
         android:layout_width="1dp"
         android:layout_height="400dp"
         android:layout_marginStart="171dp"
-        android:background="#020202"
+        android:background="@color/PureBlack"
         app:layout_constraintBottom_toTopOf="@+id/divider6"
         app:layout_constraintStart_toStartOf="@+id/divider2" />
 
@@ -809,7 +809,7 @@
         android:layout_width="1dp"
         android:layout_height="400dp"
         android:layout_marginStart="228dp"
-        android:background="#020202"
+        android:background="@color/PureBlack"
         app:layout_constraintBottom_toTopOf="@+id/divider6"
         app:layout_constraintStart_toStartOf="@+id/divider2" />
 
@@ -819,7 +819,7 @@
         android:layout_height="1dp"
         android:layout_marginStart="-15dp"
         android:layout_marginTop="28dp"
-        android:background="#000000"
+        android:background="@color/PureBlack"
         android:rotation="45"
         app:layout_constraintStart_toEndOf="@+id/divider2"
         app:layout_constraintTop_toTopOf="parent" />
@@ -830,7 +830,7 @@
         android:layout_height="1dp"
         android:layout_marginStart="-15dp"
         android:layout_marginTop="84dp"
-        android:background="#000000"
+        android:background="@color/PureBlack"
         android:rotation="45"
         app:layout_constraintStart_toEndOf="@+id/divider2"
         app:layout_constraintTop_toTopOf="parent" />
@@ -841,7 +841,7 @@
         android:layout_height="1dp"
         android:layout_marginStart="-15dp"
         android:layout_marginTop="142dp"
-        android:background="#000000"
+        android:background="@color/PureBlack"
         android:rotation="45"
         app:layout_constraintStart_toEndOf="@+id/divider2"
         app:layout_constraintTop_toTopOf="parent" />
@@ -852,7 +852,7 @@
         android:layout_height="1dp"
         android:layout_marginStart="-15dp"
         android:layout_marginTop="198dp"
-        android:background="#000000"
+        android:background="@color/PureBlack"
         android:rotation="45"
         app:layout_constraintStart_toEndOf="@+id/divider2"
         app:layout_constraintTop_toTopOf="parent" />
@@ -863,7 +863,7 @@
         android:layout_height="1dp"
         android:layout_marginStart="-15dp"
         android:layout_marginTop="255dp"
-        android:background="#000000"
+        android:background="@color/PureBlack"
         android:rotation="45"
         app:layout_constraintStart_toEndOf="@+id/divider2"
         app:layout_constraintTop_toTopOf="parent" />
@@ -874,7 +874,7 @@
         android:layout_height="1dp"
         android:layout_marginStart="-15dp"
         android:layout_marginTop="313dp"
-        android:background="#000000"
+        android:background="@color/PureBlack"
         android:rotation="45"
         app:layout_constraintStart_toEndOf="@+id/divider2"
         app:layout_constraintTop_toTopOf="parent" />
@@ -885,7 +885,7 @@
         android:layout_height="1dp"
         android:layout_marginStart="43dp"
         android:layout_marginTop="313dp"
-        android:background="#000000"
+        android:background="@color/PureBlack"
         android:rotation="45"
         app:layout_constraintStart_toEndOf="@+id/divider2"
         app:layout_constraintTop_toTopOf="parent" />
@@ -896,7 +896,7 @@
         android:layout_height="1dp"
         android:layout_marginStart="100dp"
         android:layout_marginTop="313dp"
-        android:background="#000000"
+        android:background="@color/PureBlack"
         android:rotation="45"
         app:layout_constraintStart_toEndOf="@+id/divider2"
         app:layout_constraintTop_toTopOf="parent" />
@@ -907,7 +907,7 @@
         android:layout_height="1dp"
         android:layout_marginStart="102dp"
         android:layout_marginTop="373dp"
-        android:background="#000000"
+        android:background="@color/PureBlack"
         android:rotation="45"
         app:layout_constraintStart_toEndOf="@+id/divider2"
         app:layout_constraintTop_toTopOf="parent" />
@@ -918,7 +918,7 @@
         android:layout_height="1dp"
         android:layout_marginStart="157dp"
         android:layout_marginTop="313dp"
-        android:background="#000000"
+        android:background="@color/PureBlack"
         android:rotation="45"
         app:layout_constraintStart_toEndOf="@+id/divider2"
         app:layout_constraintTop_toTopOf="parent" />
@@ -929,7 +929,7 @@
         android:layout_height="1dp"
         android:layout_marginStart="158dp"
         android:layout_marginTop="256dp"
-        android:background="#000000"
+        android:background="@color/PureBlack"
         android:rotation="45"
         app:layout_constraintStart_toEndOf="@+id/divider2"
         app:layout_constraintTop_toTopOf="parent" />
@@ -940,7 +940,7 @@
         android:layout_height="1dp"
         android:layout_marginStart="214dp"
         android:layout_marginTop="313dp"
-        android:background="#000000"
+        android:background="@color/PureBlack"
         android:rotation="45"
         app:layout_constraintStart_toEndOf="@+id/divider2"
         app:layout_constraintTop_toTopOf="parent" />
@@ -951,7 +951,7 @@
         android:layout_height="1dp"
         android:layout_marginStart="216dp"
         android:layout_marginTop="373dp"
-        android:background="#000000"
+        android:background="@color/PureBlack"
         android:rotation="45"
         app:layout_constraintStart_toEndOf="@+id/divider2"
         app:layout_constraintTop_toTopOf="parent" />
@@ -962,7 +962,7 @@
         android:layout_height="1dp"
         android:layout_marginStart="-13dp"
         android:layout_marginTop="372dp"
-        android:background="#000000"
+        android:background="@color/PureBlack"
         android:rotation="45"
         app:layout_constraintStart_toEndOf="@+id/divider2"
         app:layout_constraintTop_toTopOf="parent" />
@@ -973,7 +973,7 @@
         android:layout_height="1dp"
         android:layout_marginStart="43dp"
         android:layout_marginTop="28dp"
-        android:background="#000000"
+        android:background="@color/PureBlack"
         android:rotation="45"
         app:layout_constraintStart_toEndOf="@+id/divider2"
         app:layout_constraintTop_toTopOf="parent" />
@@ -984,7 +984,7 @@
         android:layout_height="1dp"
         android:layout_marginStart="101dp"
         android:layout_marginTop="28dp"
-        android:background="#000000"
+        android:background="@color/PureBlack"
         android:rotation="45"
         app:layout_constraintStart_toEndOf="@+id/divider2"
         app:layout_constraintTop_toTopOf="parent" />
@@ -995,7 +995,7 @@
         android:layout_height="1dp"
         android:layout_marginStart="158dp"
         android:layout_marginTop="28dp"
-        android:background="#000000"
+        android:background="@color/PureBlack"
         android:rotation="45"
         app:layout_constraintStart_toEndOf="@+id/divider2"
         app:layout_constraintTop_toTopOf="parent" />
@@ -1006,7 +1006,7 @@
         android:layout_height="1dp"
         android:layout_marginStart="215dp"
         android:layout_marginTop="28dp"
-        android:background="#000000"
+        android:background="@color/PureBlack"
         android:rotation="45"
         app:layout_constraintStart_toEndOf="@+id/divider2"
         app:layout_constraintTop_toTopOf="parent" />
@@ -1017,7 +1017,7 @@
         android:layout_height="1dp"
         android:layout_marginStart="272dp"
         android:layout_marginTop="28dp"
-        android:background="#000000"
+        android:background="@color/PureBlack"
         android:rotation="45"
         app:layout_constraintStart_toEndOf="@+id/divider2"
         app:layout_constraintTop_toTopOf="parent" />
@@ -1028,7 +1028,7 @@
         android:layout_height="1dp"
         android:layout_marginStart="330dp"
         android:layout_marginTop="28dp"
-        android:background="#000000"
+        android:background="@color/PureBlack"
         android:rotation="45"
         app:layout_constraintStart_toEndOf="@+id/divider2"
         app:layout_constraintTop_toTopOf="parent" />
